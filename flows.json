@@ -1,1 +1,5431 @@
-[]
+[
+    {
+        "id": "f10ac060eea27bb3",
+        "type": "tab",
+        "label": "Family Bell",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "268e18aa217b4aab",
+        "type": "tab",
+        "label": "Thermostats",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f890255551479538",
+        "type": "tab",
+        "label": "Lights / Switches",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1b0d2a649eef07c6",
+        "type": "tab",
+        "label": "Presence",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d1b7e22ea16d084a",
+        "type": "tab",
+        "label": "Allergy",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1a80cdb33264de82",
+        "type": "tab",
+        "label": "Maintenance",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d0a82c2bf338c781",
+        "type": "subflow",
+        "name": "Subflow 3",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "56ac08cc0ea83117",
+        "type": "subflow",
+        "name": "Subflow 2",
+        "info": "",
+        "in": [],
+        "out": [
+            {
+                "x": 420,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "2c450a36b3af65a4",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 720,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "47c9fd3a9dc33e76",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1280,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "7541c70094d05ef7",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4b6ab7ae6d07454d",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": [
+            {
+                "x": 380,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "47525ec84dc4e30d",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "d112e7e3977cefe4",
+        "type": "group",
+        "z": "1b0d2a649eef07c6",
+        "name": "Doors",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5435ae65ee21b09f",
+            "906a2db795688f0f",
+            "bc721633bcbb7e52",
+            "ed4524bb347a2033",
+            "1834aef408dada1a",
+            "d521ac9f2376286b",
+            "e6ea72470223e7ef",
+            "dae552f76ee48f0c",
+            "ee300aefef750ee2",
+            "54f45a70f213b3c6",
+            "0850dc3ee1d5582f",
+            "6f0c69cdaf3d40b2"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 672,
+        "h": 262
+    },
+    {
+        "id": "88b6d3d2d455714b",
+        "type": "group",
+        "z": "f890255551479538",
+        "name": "Christmas Tree",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b5deb24e4d886f91",
+            "704a4266689371d2",
+            "2b6a6e6d6551d775",
+            "71d6551f5ce7dee7",
+            "0348bc35a51263c4",
+            "78bb650473da63bb",
+            "c7b42ea35ce6fa2c"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 872,
+        "h": 162
+    },
+    {
+        "id": "3a891c4a9f2a5fa3",
+        "type": "group",
+        "z": "f890255551479538",
+        "style": {
+            "stroke": "#2b2b2b",
+            "stroke-opacity": "1",
+            "fill": "#181818",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "a74362e1963807c4",
+            "e872208eeab9cbea",
+            "400ecdc8e3bb1045",
+            "529343a629f3edde",
+            "b806c945bc4e4c11",
+            "34b7543bbbf8ee2c",
+            "5abe33190922ea98"
+        ],
+        "x": 14,
+        "y": 199,
+        "w": 852,
+        "h": 142
+    },
+    {
+        "id": "cd5dc5c8e1229282",
+        "type": "group",
+        "z": "268e18aa217b4aab",
+        "name": "Home / Away",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a315d07f19f0b44b",
+            "aeb83134f0493158",
+            "fd80e75febb0a6b0",
+            "5d874519c5eb74dc"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 492,
+        "h": 142
+    },
+    {
+        "id": "f5abee6a6d9af166",
+        "type": "group",
+        "z": "268e18aa217b4aab",
+        "name": "Sleep / Wake",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f72615a98f2a8784",
+            "b34fbf9b5767ef53",
+            "d341b6c7947d8400",
+            "917915f9a3d1ca40",
+            "549735d0f9161720",
+            "7c2afe705bc9caf6",
+            "511ba8309ea0d8ed",
+            "f11c75bfe9af5353",
+            "b3d4bb8f39a980ff"
+        ],
+        "x": 14,
+        "y": 179,
+        "w": 852,
+        "h": 302
+    },
+    {
+        "id": "99e9a9a72c807ddf",
+        "type": "group",
+        "z": "f10ac060eea27bb3",
+        "name": "Morning Alarm",
+        "style": {
+            "stroke": "#92d04f",
+            "label": true
+        },
+        "nodes": [
+            "9ffb467613ba286b",
+            "8ab82e132915bf6f",
+            "698e3878397ac4d1",
+            "c4b92cb115659214",
+            "f4caee45564c1125",
+            "9b3888e33236f394",
+            "28684e04674d8e94",
+            "72d47b1c8fde27a6",
+            "a20cb1c6daa400d6",
+            "7d0567e8f594bbb4",
+            "10e208d39b6a1a4b",
+            "d4199c4e6580a605",
+            "6528f6a488b27e91",
+            "0a01c38095352157",
+            "b8282ef9205e7274",
+            "7bbcaf77b74ef651",
+            "92ed67ca96840135",
+            "fd7bbe8adcbcca96",
+            "52777370f293b943",
+            "a95b3c4705939417",
+            "72fb77f0f44855f3",
+            "f66ea1e8b0fb77d2",
+            "e736a02a9baabc51",
+            "4308eeb55605e12c",
+            "72f13f525fe9d04b",
+            "fb9b77606a5a0b29",
+            "1eacb125b7f834e0",
+            "0cadcf5adce815d3",
+            "d5b77ba1cb6ad2a5",
+            "773461aab2ffb19b",
+            "440e4aac48c4b4ea",
+            "8448672b711eb3ce",
+            "adb670f02158d26f",
+            "1cfadee5ffc8d4d8",
+            "35cb56eb129944c6",
+            "fa0216fd49d4af8e",
+            "5a03076f55e90f64",
+            "d5d831064a9c215b",
+            "7f71baf3b6377c1b",
+            "eb3550c96091b48f",
+            "a480f65e15928547",
+            "35327d693d8240e7",
+            "33d2697afbf77b47",
+            "86e5932a65362b9a",
+            "81865fd4430f4ca4",
+            "5089962daac63499"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 2292,
+        "h": 589.5
+    },
+    {
+        "id": "6c232881c479efef",
+        "type": "group",
+        "z": "1a80cdb33264de82",
+        "name": "HELOC APR Check",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "849720e5f4641931",
+            "9797c6b34ed4ba16",
+            "b0ea380f4d03fc99",
+            "c91ff4b712a2a756",
+            "9da8996f5673d23c",
+            "1e73155275dddc89",
+            "390bcd37bac3b157",
+            "24a610122a86761f",
+            "65e4123bdde2b102"
+        ],
+        "x": 34,
+        "y": 319,
+        "w": 1262,
+        "h": 202
+    },
+    {
+        "id": "e80cb7e91539c8a8",
+        "type": "group",
+        "z": "1a80cdb33264de82",
+        "name": "Flavia's Pill Reminder",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "faa8534c12b282d6",
+            "0f14a76563e7fcc7"
+        ],
+        "x": 34,
+        "y": 199,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "321c4571ed2af216",
+        "type": "group",
+        "z": "1a80cdb33264de82",
+        "name": "Sensor Battery Levels",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b4ed8a121d0b23e0",
+            "ba0439a.9e1d4c8",
+            "26160118.86d24e",
+            "b70884a8.66beb8"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 712,
+        "h": 142
+    },
+    {
+        "id": "db559b8fb32ae329",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 6,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": [
+            "y",
+            "yes",
+            "true",
+            "on",
+            "home",
+            "open"
+        ],
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": 30,
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": ": ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "default",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": false
+    },
+    {
+        "id": "ca9ba5ca070f5117",
+        "type": "global-config",
+        "env": [
+            {
+                "name": "NODE_RED_ENABLE_PROJECTS",
+                "value": "true",
+                "type": "str"
+            }
+        ]
+    },
+    {
+        "id": "ab1e534f78027f80",
+        "type": "server-state-changed",
+        "z": "d0a82c2bf338c781",
+        "name": "School Calendar",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "calendar.school"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "habool",
+        "ifState": "true",
+        "ifStateType": "bool",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            }
+        ],
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "29c177afcf3ad4b1",
+                "405383baa3a3a4b2"
+            ],
+            [
+                "5483ab0906e51555",
+                "405383baa3a3a4b2"
+            ]
+        ]
+    },
+    {
+        "id": "29c177afcf3ad4b1",
+        "type": "switch",
+        "z": "d0a82c2bf338c781",
+        "name": "Toggle",
+        "property": "data.new_state.attributes.message",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "No School",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "6e83e6ef2d5d5172",
+                "60cb651167cc1d80"
+            ]
+        ]
+    },
+    {
+        "id": "6e83e6ef2d5d5172",
+        "type": "api-call-service",
+        "z": "d0a82c2bf338c781",
+        "name": "Turn On No School",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.no_school"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5483ab0906e51555",
+        "type": "api-call-service",
+        "z": "d0a82c2bf338c781",
+        "name": "Turn Off No School",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.no_school"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "405383baa3a3a4b2",
+        "type": "debug",
+        "z": "d0a82c2bf338c781",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "data.new_state.attributes.message",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "60cb651167cc1d80",
+        "type": "debug",
+        "z": "d0a82c2bf338c781",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2c450a36b3af65a4",
+        "type": "inject",
+        "z": "56ac08cc0ea83117",
+        "name": "Test From Alarm Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47c9fd3a9dc33e76",
+        "type": "inject",
+        "z": "56ac08cc0ea83117",
+        "name": "Test From Day of Week Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7541c70094d05ef7",
+        "type": "inject",
+        "z": "56ac08cc0ea83117",
+        "name": "Test From Where To Alarm Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1070,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46a8d140189b496c",
+        "type": "inject",
+        "z": "4b6ab7ae6d07454d",
+        "name": "Test From MBDR Speaker",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "3fd4cc354ed6246c"
+            ]
+        ]
+    },
+    {
+        "id": "3fd4cc354ed6246c",
+        "type": "api-call-service",
+        "z": "4b6ab7ae6d07454d",
+        "name": "Alarm Speaker",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "spotcast.start",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"entity_id\":\"media_player.alarm_speakers\",\"uri\":\"spotify:playlist:37i9dQZF1DXcBWIGoYBM5M\",\"force_playback\":false,\"random_song\":true,\"repeat\":\"off\",\"shuffle\":true,\"limit\":10}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "spotcast",
+        "service": "start",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "2fb7b7c13474f070"
+            ]
+        ]
+    },
+    {
+        "id": "2fb7b7c13474f070",
+        "type": "debug",
+        "z": "4b6ab7ae6d07454d",
+        "name": "Debug @ MBDR Speaker",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "47525ec84dc4e30d",
+        "type": "inject",
+        "z": "4b6ab7ae6d07454d",
+        "name": "Test After Delay",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8551a4f13323bc7a",
+        "type": "inject",
+        "z": "4b6ab7ae6d07454d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [
+                "267a1c8133fb52fb"
+            ]
+        ]
+    },
+    {
+        "id": "267a1c8133fb52fb",
+        "type": "function",
+        "z": "4b6ab7ae6d07454d",
+        "name": "RandPlaylist()",
+        "func": "\nconst options = [\n    'spotify:playlist:37i9dQZF1DXcBWIGoYBM5M', // Today's Top Hits\n    'spotify:playlist:37i9dQZF1E375ju8n547l8', // Daily Mix 1\n    'spotify:playlist:37i9dQZF1E35r4IalTW8E9', // Daily Mix 2\n    'spotify:playlist:37i9dQZF1E37Zpje6YDmQh', // Daily Mix 3\n    'spotify:playlist:37i9dQZF1E36d4yIZYsGEt', // Daily Mix 4\n    'spotify:playlist:playlist/37i9dQZF1E39Xt1MJIH151', // Daily Mix 5\n    'spotify:playlist:37i9dQZF1E36Y3P1zfdePL' // Daily Mix 6\n];\nfunction getRandomOption() {\n    const randomIndex = Math.floor(Math.random() * options.length);\n\n    return options[randomIndex];\n}\n\nmsg.url = getRandomOption();\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 80,
+        "wires": [
+            [
+                "1913c675dc18f7ca",
+                "a07273d194c6a07e"
+            ]
+        ]
+    },
+    {
+        "id": "1913c675dc18f7ca",
+        "type": "debug",
+        "z": "4b6ab7ae6d07454d",
+        "name": "randnum",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a07273d194c6a07e",
+        "type": "debug",
+        "z": "4b6ab7ae6d07454d",
+        "name": "url",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "url",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9ffb467613ba286b",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Alarm MBDR",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.alarm_clock_mbdr",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 1010,
+        "y": 260,
+        "wires": [
+            [
+                "72fb77f0f44855f3"
+            ],
+            [
+                "f66ea1e8b0fb77d2"
+            ]
+        ]
+    },
+    {
+        "id": "8ab82e132915bf6f",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Alarm Gavin",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.alarm_clock_gavn",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "52777370f293b943"
+            ],
+            [
+                "a95b3c4705939417"
+            ]
+        ]
+    },
+    {
+        "id": "698e3878397ac4d1",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Alarm Izzy",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.alarm_clock_izzy",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 1010,
+        "y": 100,
+        "wires": [
+            [
+                "fd7bbe8adcbcca96"
+            ],
+            [
+                "92ed67ca96840135"
+            ]
+        ]
+    },
+    {
+        "id": "c4b92cb115659214",
+        "type": "ha-time",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Kid's Wake Up",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.kids_wake_up",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "35cb56eb129944c6"
+            ]
+        ]
+    },
+    {
+        "id": "f4caee45564c1125",
+        "type": "function",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Day of the Week",
+        "func": "var date = new Date();\n\nvar daynum = date.getDay();\n\nmsg.payload = daynum;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "1cfadee5ffc8d4d8"
+            ]
+        ]
+    },
+    {
+        "id": "9b3888e33236f394",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "IZZY Wake Up",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "tts.cloud_say",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"entity_id\":\"media_player.mass_isabelles_speaker\",\"message\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "tts",
+        "service": "cloud_say",
+        "x": 2140,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28684e04674d8e94",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "GAVN Wake Up",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "tts.cloud_say",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"entity_id\":\"media_player.mass_gavins_speaker\",\"message\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "tts",
+        "service": "cloud_say",
+        "x": 2140,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72d47b1c8fde27a6",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Turn On Izzy's Lamp",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.isabelle"
+        ],
+        "labelId": [],
+        "data": "{\"brightness_pct\":\"100\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 1720,
+        "y": 60,
+        "wires": [
+            [
+                "10e208d39b6a1a4b"
+            ]
+        ]
+    },
+    {
+        "id": "a20cb1c6daa400d6",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Turn On Gavin's Lamps",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.gavin"
+        ],
+        "labelId": [],
+        "data": "{\"brightness_pct\":\"100\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 1730,
+        "y": 140,
+        "wires": [
+            [
+                "d4199c4e6580a605"
+            ]
+        ]
+    },
+    {
+        "id": "7d0567e8f594bbb4",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Alarm Speaker",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "music_assistant.play_media",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.mass_alarm_speakers"
+        ],
+        "labelId": [],
+        "data": "{\"media_id\":\"{{url}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "music_assistant",
+        "service": "play_media",
+        "x": 2140,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10e208d39b6a1a4b",
+        "type": "function",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "RandomQuote()",
+        "func": "msg.topic = [\n  \"Rise and shine!\",\n  \"Its time to get up and seize the day!\",\n  \"The early bird gets the worm.\",\n  \"Dont be a lazybones.\",\n  \"Its a beautiful day outside.\",\n  \"The sun is shining, the birds are singing, and its time to wake up!\",\n  \"Wakey wakey, eggs and bakey!\",\n  \"Its time to rise and grind.\",\n  \"Time to get out of bed and start your day.\",\n  \"The day is calling, so dont be late.\",\n  \"Wake up, sleepyhead!\",\n  \"Its time to face the world.\",\n  \"The alarm clock has spoken.\",\n  \"Its time to get moving.\",\n  \"Dont miss out on all the fun today!\",\n  \"The day is here, so make the most of it.\",\n  \"Wake up and smell the coffee.\",\n  \"Its time to start your engines.\",\n  \"The day is yours, so go out and conquer it!\",\n  \"Rise and shine, buttercup!\",\n  \"Its time to get out of bed and start living.\",\n  \"The day is waiting for you.\",\n  \"Wake up and live your life!\",\n  \"The world is your oyster.\",\n  \"Wake up and make it a great day!\",\n];\n\nfunction getRandomItem(wakeUpQuotes) {\n  // Generate a random number between 0 and the length of the array\n    var randomIndex = Math.floor(Math.random() * wakeUpQuotes.length);\n\n  // Return the item at the random index\n    msg.payload = wakeUpQuotes[randomIndex];\n    return msg;\n}\n\ngetRandomItem(msg.topic);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1960,
+        "y": 60,
+        "wires": [
+            [
+                "9b3888e33236f394"
+            ]
+        ]
+    },
+    {
+        "id": "d4199c4e6580a605",
+        "type": "function",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "RandomQuote()",
+        "func": "msg.topic = [\n  // Classics & Originals\n  \"Rise and shine!\",\n  \"It's time to get up and seize the day!\",\n  \"The early bird gets the worm.\",\n  \"It's a beautiful day outside.\",\n  \"The sun is shining, the birds are singing, and it's time to wake up!\",\n  \"Wakey wakey, eggs and bakey!\",\n  \"It's time to rise and grind.\",\n  \"Time to get out of bed and start your day.\",\n  \"The day is calling, so don't be late.\",\n  \"Wake up, sleepyhead!\",\n  \"It's time to face the world.\",\n  \"The alarm clock has spoken.\",\n  \"It's time to get moving.\",\n  \"Don't miss out on all the fun today!\",\n  \"The day is here, so make the most of it.\",\n  \"Wake up and smell the coffee.\",\n  \"The day is yours, so go out and conquer it!\",\n  \"Rise and shine, buttercup!\",\n  \"The day is waiting for you.\",\n  \"Wake up and make it a great day!\",\n  \"The world is your oyster.\",\n\n  // Gentle & Sweet\n  \"Good morning, sunshine.\",\n  \"The morning is here, and it's happy to see you.\",\n  \"Time to wake up, my little star.\",\n  \"A brand new day is here to give you a hug.\",\n  \"Wake up, sleepyhead. The world missed you.\",\n  \"Good morning, my favorite person to wake up.\",\n  \"The sun has peeked over the horizon just to say hello to you.\",\n\n  // Fun & Silly\n  \"Beep boop! This is your robot butler, requesting you to wake up.\",\n  \"The pillow has declared the sleeping competition is over. You won!\",\n  \"Time to activate daytime mode!\",\n  \"Wakey wakey, sleepy snakey!\",\n  \"Come on, sleepyhead, the toast is getting nervous.\",\n  \"Time to unleash the breakfast monster!\",\n  \"The floor is lava... but first, you have to get out of bed!\",\n  \"I hear pancakes calling your name...\",\n  \"The wiggle-out-of-bed challenge starts now!\",\n\n  // Adventurous & Exciting\n  \"Good morning, adventurer! A new quest awaits.\",\n  \"Your mission, should you choose to accept it, is to have an amazing day.\",\n  \"Captain, the ship of 'Today' is ready to set sail!\",\n  \"Time to assemble, little hero! The day needs saving.\",\n  \"Greetings, Earthling! It's time to explore Planet Day.\",\n  \"Let the great adventure of today begin!\",\n  \"Your daily mission briefing is ready. Let's go!\",\n\n  // Motivational & Empowering\n  \"Time to wake up and be awesome!\",\n  \"Let's see what amazing things you'll do today.\",\n  \"A new day means new ideas and new fun. Let's go!\",\n  \"Ready to fill this day with your sparkle?\",\n  \"It's a new day to be your amazing self.\",\n  \"Let's make some happy happen today.\",\n  \"Wake up your body, wake up your mind, it's a great day you'll find!\"\n];\n\nfunction getRandomItem(wakeUpQuotes) {\n  // Generate a random number between 0 and the length of the array\n    var randomIndex = Math.floor(Math.random() * wakeUpQuotes.length);\n\n  // Return the item at the random index\n    msg.payload = wakeUpQuotes[randomIndex];\n    return msg;\n}\n\ngetRandomItem(msg.topic);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1960,
+        "y": 140,
+        "wires": [
+            [
+                "28684e04674d8e94"
+            ]
+        ]
+    },
+    {
+        "id": "6528f6a488b27e91",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Shuffle Media",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.shuffle_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "e3cca36cd2d67edb4b1f65181e4ae727"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"shuffle\":true}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "shuffle_set",
+        "x": 1720,
+        "y": 320,
+        "wires": [
+            [
+                "fb9b77606a5a0b29"
+            ]
+        ]
+    },
+    {
+        "id": "0a01c38095352157",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "IZZY | Sunrise",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "script.ceiling_light_sunrise_izzy"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "script",
+        "service": "turn_on",
+        "x": 1700,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8282ef9205e7274",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "GAVN | Sunrise",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "script.ceiling_light_sunrise_gavn"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "script",
+        "service": "turn_on",
+        "x": 1700,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7bbcaf77b74ef651",
+        "type": "delay",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "180",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1490,
+        "y": 60,
+        "wires": [
+            [
+                "72d47b1c8fde27a6"
+            ]
+        ]
+    },
+    {
+        "id": "92ed67ca96840135",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Mute | Izzy",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.isabelles_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.0\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd7bbe8adcbcca96",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Normalize | Izzy",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.isabelles_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.35\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1220,
+        "y": 80,
+        "wires": [
+            [
+                "7bbcaf77b74ef651",
+                "0a01c38095352157"
+            ]
+        ]
+    },
+    {
+        "id": "52777370f293b943",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Normalize | Gavin",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.gavins_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.35\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1230,
+        "y": 160,
+        "wires": [
+            [
+                "b8282ef9205e7274",
+                "4308eeb55605e12c"
+            ]
+        ]
+    },
+    {
+        "id": "a95b3c4705939417",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Mute | Gavin",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.gavins_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.0\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72fb77f0f44855f3",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Normalize | MBDR",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.main_bedroom_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.35\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1230,
+        "y": 240,
+        "wires": [
+            [
+                "72f13f525fe9d04b"
+            ]
+        ]
+    },
+    {
+        "id": "f66ea1e8b0fb77d2",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Mute | MBDR",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.volume_set",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.isabelles_speaker",
+            "media_player.gavins_speaker",
+            "media_player.main_bedroom_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"volume_level\":\"0.0\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "volume_set",
+        "x": 1220,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e736a02a9baabc51",
+        "type": "delay",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "45",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1520,
+        "y": 320,
+        "wires": [
+            [
+                "6528f6a488b27e91"
+            ]
+        ]
+    },
+    {
+        "id": "4308eeb55605e12c",
+        "type": "delay",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "180",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1490,
+        "y": 140,
+        "wires": [
+            [
+                "a20cb1c6daa400d6"
+            ]
+        ]
+    },
+    {
+        "id": "72f13f525fe9d04b",
+        "type": "delay",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "180",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1490,
+        "y": 220,
+        "wires": [
+            [
+                "e736a02a9baabc51"
+            ]
+        ]
+    },
+    {
+        "id": "fb9b77606a5a0b29",
+        "type": "function",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "RandPlaylist()",
+        "func": "\nconst options = [\n    'spotify:playlist:37i9dQZF1DXcBWIGoYBM5M', // Today's Top Hits\n    'spotify:playlist:37i9dQZF1E375ju8n547l8', // Daily Mix 1\n    'spotify:playlist:37i9dQZF1E35r4IalTW8E9', // Daily Mix 2\n    'spotify:playlist:37i9dQZF1E37Zpje6YDmQh', // Daily Mix 3\n    'spotify:playlist:37i9dQZF1E36d4yIZYsGEt', // Daily Mix 4\n    'spotify:playlist:playlist/37i9dQZF1E39Xt1MJIH151', // Daily Mix 5\n    'spotify:playlist:37i9dQZF1E36Y3P1zfdePL' // Daily Mix 6\n];\nfunction getRandomOption() {\n    const randomIndex = Math.floor(Math.random() * options.length);\n\n    return options[randomIndex];\n}\n\nmsg.url = getRandomOption();\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1920,
+        "y": 320,
+        "wires": [
+            [
+                "86e5932a65362b9a"
+            ]
+        ]
+    },
+    {
+        "id": "1eacb125b7f834e0",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Monday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.monday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 100,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "fa0216fd49d4af8e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0cadcf5adce815d3",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Wednesday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.wednesday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "a480f65e15928547"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d5b77ba1cb6ad2a5",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Tuesday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.tuesday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "eb3550c96091b48f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "773461aab2ffb19b",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Thursday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.thursday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "35327d693d8240e7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "440e4aac48c4b4ea",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Saturday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.saturday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "698e3878397ac4d1",
+                "8ab82e132915bf6f",
+                "9ffb467613ba286b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8448672b711eb3ce",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Friday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.friday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "33d2697afbf77b47"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "adb670f02158d26f",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Sunday",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.sunday",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 540,
+        "y": 60,
+        "wires": [
+            [
+                "698e3878397ac4d1",
+                "8ab82e132915bf6f",
+                "9ffb467613ba286b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1cfadee5ffc8d4d8",
+        "type": "switch",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "adb670f02158d26f"
+            ],
+            [
+                "1eacb125b7f834e0"
+            ],
+            [
+                "d5b77ba1cb6ad2a5"
+            ],
+            [
+                "0cadcf5adce815d3"
+            ],
+            [
+                "773461aab2ffb19b"
+            ],
+            [
+                "8448672b711eb3ce"
+            ],
+            [
+                "440e4aac48c4b4ea"
+            ]
+        ]
+    },
+    {
+        "id": "35cb56eb129944c6",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Alarm On",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.alarm_clock",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "f4caee45564c1125"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fa0216fd49d4af8e",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [],
+            [
+                "698e3878397ac4d1",
+                "8ab82e132915bf6f"
+            ]
+        ]
+    },
+    {
+        "id": "5a03076f55e90f64",
+        "type": "subflow:4b6ab7ae6d07454d",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "More Testing",
+        "x": 1770,
+        "y": 460,
+        "wires": [
+            [
+                "6528f6a488b27e91"
+            ]
+        ]
+    },
+    {
+        "id": "d5d831064a9c215b",
+        "type": "subflow:56ac08cc0ea83117",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Testing",
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [
+                "35cb56eb129944c6"
+            ],
+            [
+                "f4caee45564c1125"
+            ],
+            [
+                "698e3878397ac4d1",
+                "8ab82e132915bf6f",
+                "9ffb467613ba286b"
+            ]
+        ]
+    },
+    {
+        "id": "7f71baf3b6377c1b",
+        "type": "subflow:d0a82c2bf338c781",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "School Calendar Check",
+        "x": 560,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "eb3550c96091b48f",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 770,
+        "y": 140,
+        "wires": [
+            [],
+            [
+                "8ab82e132915bf6f",
+                "698e3878397ac4d1"
+            ]
+        ]
+    },
+    {
+        "id": "a480f65e15928547",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [],
+            [
+                "8ab82e132915bf6f",
+                "698e3878397ac4d1"
+            ]
+        ]
+    },
+    {
+        "id": "35327d693d8240e7",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "8ab82e132915bf6f",
+                "698e3878397ac4d1"
+            ]
+        ]
+    },
+    {
+        "id": "33d2697afbf77b47",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [],
+            [
+                "8ab82e132915bf6f",
+                "698e3878397ac4d1"
+            ]
+        ]
+    },
+    {
+        "id": "86e5932a65362b9a",
+        "type": "api-current-state",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "No School",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.no_school",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 2010,
+        "y": 260,
+        "wires": [
+            [
+                "7d0567e8f594bbb4"
+            ],
+            [
+                "81865fd4430f4ca4"
+            ]
+        ]
+    },
+    {
+        "id": "81865fd4430f4ca4",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Main Bedroom Speaker",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "music_assistant.play_media",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.mass_alarm_speakers",
+            "media_player.mass_main_bedroom_speaker"
+        ],
+        "labelId": [],
+        "data": "{\"media_id\":\"{{url}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "music_assistant",
+        "service": "play_media",
+        "x": 2170,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5089962daac63499",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            [
+                "9ffb467613ba286b",
+                "8ab82e132915bf6f",
+                "698e3878397ac4d1"
+            ]
+        ]
+    },
+    {
+        "id": "a315d07f19f0b44b",
+        "type": "switch",
+        "z": "268e18aa217b4aab",
+        "g": "cd5dc5c8e1229282",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "aeb83134f0493158"
+            ],
+            [
+                "fd80e75febb0a6b0"
+            ]
+        ]
+    },
+    {
+        "id": "aeb83134f0493158",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "cd5dc5c8e1229282",
+        "name": "Set Home",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "fd636ab6989d0dd3f80f27c62fdb575f",
+            "3ad3729291f7d18acab992d9bfdf6124"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\t    \"preset_mode\": payload = \"off\" ?  \"none\" :  payload = \"heat\" ? \"Energy heat\" : payload = \"cool\" ? \"Energy cool\" : \"none\" \t}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 420,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd80e75febb0a6b0",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "cd5dc5c8e1229282",
+        "name": "Set Away",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_preset_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "fd636ab6989d0dd3f80f27c62fdb575f",
+            "3ad3729291f7d18acab992d9bfdf6124"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"preset_mode\":\"none\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "climate",
+        "service": "set_preset_mode",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d874519c5eb74dc",
+        "type": "server-state-changed",
+        "z": "268e18aa217b4aab",
+        "g": "cd5dc5c8e1229282",
+        "name": "Home",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "zone.home"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "a315d07f19f0b44b"
+            ]
+        ]
+    },
+    {
+        "id": "f72615a98f2a8784",
+        "type": "ha-time",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Sleep",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.thermostat_sleep",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "wakesleep",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "7c2afe705bc9caf6"
+            ]
+        ]
+    },
+    {
+        "id": "b34fbf9b5767ef53",
+        "type": "ha-time",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Wake",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.thermostat_wake",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "wakesleep",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "7c2afe705bc9caf6"
+            ]
+        ]
+    },
+    {
+        "id": "d341b6c7947d8400",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Sets Wake Target Temperature",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_temperature",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "fd636ab6989d0dd3f80f27c62fdb575f",
+            "3ad3729291f7d18acab992d9bfdf6124"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\t    \"temperature\": payload = \"heat\" ? $entities('input_number.wake_heat_comfort').state : $entities('input_number.wake_cool_comfort').state \t}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_temperature",
+        "x": 710,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "917915f9a3d1ca40",
+        "type": "server-state-changed",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Thermostats State",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "climate.upstairs_thermostat",
+                "climate.downstairs_thermostat"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "549735d0f9161720"
+            ]
+        ]
+    },
+    {
+        "id": "549735d0f9161720",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Last Mode Toggle",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_select.select_option",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_select.last_mode"
+        ],
+        "labelId": [],
+        "data": "{\"option\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "input_select",
+        "service": "select_option",
+        "x": 350,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c2afe705bc9caf6",
+        "type": "api-current-state",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Last Mode",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_select.last_mode",
+        "state_type": "str",
+        "blockInputOverrides": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "f11c75bfe9af5353",
+                "b3d4bb8f39a980ff"
+            ]
+        ]
+    },
+    {
+        "id": "511ba8309ea0d8ed",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "Sets Sleep Target Temperature",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_temperature",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "fd636ab6989d0dd3f80f27c62fdb575f",
+            "3ad3729291f7d18acab992d9bfdf6124"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\t    \"temperature\": payload = \"heat\" ? $entities('input_number.sleep_heat_comfort').state : $entities('input_number.sleep_cool_comfort').state \t}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_temperature",
+        "x": 710,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f11c75bfe9af5353",
+        "type": "switch",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "",
+        "property": "wakesleep",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "input_datetime.thermostat_wake",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "input_datetime.thermostat_sleep",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 280,
+        "wires": [
+            [
+                "d341b6c7947d8400"
+            ],
+            [
+                "511ba8309ea0d8ed"
+            ]
+        ]
+    },
+    {
+        "id": "b3d4bb8f39a980ff",
+        "type": "debug",
+        "z": "268e18aa217b4aab",
+        "g": "f5abee6a6d9af166",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a9ac1e438ab8775e",
+        "type": "switch",
+        "z": "f890255551479538",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 910,
+        "y": 400,
+        "wires": [
+            [
+                "edb6a3f2ad3f171d"
+            ],
+            [
+                "83ffbbf13472094b"
+            ]
+        ]
+    },
+    {
+        "id": "83ffbbf13472094b",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Overhead | 25%",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.dimmer"
+        ],
+        "labelId": [],
+        "data": "{\"brightness_pct\":25}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edb6a3f2ad3f171d",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Overhead | Off",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.dimmer"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 1120,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0a87120ffcf8a1c",
+        "type": "switch",
+        "z": "f890255551479538",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "no_presence",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "no_movement",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Clear",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "movement",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "a959903f46c67938"
+            ],
+            [
+                "379d8df7b1ed1306"
+            ],
+            [
+                "e0bf5f491477aaa5"
+            ],
+            [
+                "2ccb5c9813245ebd"
+            ],
+            [
+                "72ca84b2d99b90f0"
+            ],
+            [
+                "72ca84b2d99b90f0"
+            ]
+        ]
+    },
+    {
+        "id": "72ca84b2d99b90f0",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Living Room Lamps | On",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.living_room_lights"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 1150,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "369c46ae5a1d5be4",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Living Room Lamps | Off",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.living_room_lights"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 1430,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a959903f46c67938",
+        "type": "ha-wait-until",
+        "z": "f890255551479538",
+        "name": "Movement",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "entities": {
+            "entity": [
+                "binary_sensor.fp1_presence"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "property": "state",
+        "comparator": "is",
+        "value": "no_presence",
+        "valueType": "str",
+        "timeout": "5",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "x": 1110,
+        "y": 520,
+        "wires": [
+            [],
+            [
+                "369c46ae5a1d5be4"
+            ]
+        ]
+    },
+    {
+        "id": "379d8df7b1ed1306",
+        "type": "ha-wait-until",
+        "z": "f890255551479538",
+        "name": "Movement",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "entities": {
+            "entity": [
+                "sensor.fp1_movement"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "property": "state",
+        "comparator": "is",
+        "value": "no_movement",
+        "valueType": "str",
+        "timeout": "5",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "x": 1110,
+        "y": 560,
+        "wires": [
+            [],
+            [
+                "369c46ae5a1d5be4"
+            ]
+        ]
+    },
+    {
+        "id": "f2012ca528a7281c",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Living Room Lamps | On",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.living_room_lights"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 710,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ef7e48716a63986",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Accent Lights | Off",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.accent_lights"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 370,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "494b4ce79689d893",
+        "type": "server-state-changed",
+        "z": "f890255551479538",
+        "name": "Trisensor Illuminance",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.trisensor_illuminance_2"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "50",
+        "ifStateType": "num",
+        "ifStateOperator": "lte",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "3ad3350dc471d3a9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5b555b3ddc0d2310",
+        "type": "inject",
+        "z": "f890255551479538",
+        "name": "Midnight",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "1ef7e48716a63986"
+            ]
+        ]
+    },
+    {
+        "id": "baf5789696f2e16f",
+        "type": "server-state-changed",
+        "z": "f890255551479538",
+        "name": "Living Room Occupancy",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.trisensor_motion_detection_2",
+                "sensor.fp1_movement",
+                "binary_sensor.fp1_presence"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "num",
+        "ifStateOperator": "lte",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "b86dfb66f70bf868"
+            ]
+        ]
+    },
+    {
+        "id": "39877107c6bc7f23",
+        "type": "server-state-changed",
+        "z": "f890255551479538",
+        "name": "Hallway Motion",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.trisensor_motion_detection"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "num",
+        "ifStateOperator": "lte",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "7f28cda89d620332"
+            ]
+        ]
+    },
+    {
+        "id": "2ccb5c9813245ebd",
+        "type": "ha-wait-until",
+        "z": "f890255551479538",
+        "name": "Trisensor",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "entities": {
+            "entity": [
+                "binary_sensor.trisensor_motion_detection_2"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "property": "state",
+        "comparator": "is",
+        "value": "off",
+        "valueType": "str",
+        "timeout": "5",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "x": 1100,
+        "y": 680,
+        "wires": [
+            [],
+            [
+                "369c46ae5a1d5be4"
+            ]
+        ]
+    },
+    {
+        "id": "e0bf5f491477aaa5",
+        "type": "ha-wait-until",
+        "z": "f890255551479538",
+        "name": "Presence",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "entities": {
+            "entity": [
+                "binary_sensor.fp1_presence"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "property": "state",
+        "comparator": "is",
+        "value": "Clear",
+        "valueType": "str",
+        "timeout": "5",
+        "timeoutType": "num",
+        "timeoutUnits": "minutes",
+        "checkCurrentState": true,
+        "blockInputOverrides": true,
+        "outputProperties": [],
+        "x": 1100,
+        "y": 620,
+        "wires": [
+            [],
+            [
+                "369c46ae5a1d5be4"
+            ]
+        ]
+    },
+    {
+        "id": "9ae97f649bf97bef",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Overhead | Off",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.dimmer"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 740,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5deb24e4d886f91",
+        "type": "function",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "Random Effect",
+        "func": "const effects = [\n  \"0\", // Snow\n  \"1\", // Candy Cane\n  \"2\", // Glow\n  \"3\", // Carnival\n  \"4\", // Paradise\n  \"5\", // Bliss\n  \"6\", // Cotton Candy\n  \"7\", // Vintage\n  \"8\", // Dreamy Flow\n  \"9\", // Waves\n  \"10\", // Unicorn Sun\n  \"11\", // Christmas Spirit\n  \"12\", // Eclipse\n  \"13\" // Magical R-bow\n];\n\nfunction setRandomEffect() {\n  var tempTreeEffect = effects[Math.floor(Math.random() * effects.length)];\n  msg.treeEffect = tempTreeEffect;\n}\n\nsetRandomEffect();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 60,
+        "wires": [
+            [
+                "704a4266689371d2",
+                "71d6551f5ce7dee7"
+            ]
+        ]
+    },
+    {
+        "id": "704a4266689371d2",
+        "type": "debug",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "Current Tree Effect",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "treeEffect",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2b6a6e6d6551d775",
+        "type": "trigger",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "0",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "b5deb24e4d886f91"
+            ]
+        ]
+    },
+    {
+        "id": "71d6551f5ce7dee7",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "Effect Change",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [
+            "51b626315c9d6bda7002fff0e3a3760b"
+        ],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"effect\": treeEffect}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "light",
+        "service": "turn_on",
+        "x": 780,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0348bc35a51263c4",
+        "type": "eztimer",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "Sunset - Midnight",
+        "debug": false,
+        "autoname": "sunset - 00:00:00",
+        "tag": "eztimer",
+        "topic": "",
+        "suspended": false,
+        "sendEventsOnSuspend": false,
+        "latLongSource": "manual",
+        "latLongHaZone": "zone.home",
+        "lat": "37.461311",
+        "lon": "-121.915779",
+        "timerType": "1",
+        "startupMessage": true,
+        "ontype": "1",
+        "ontimesun": "sunset",
+        "ontimetod": "17:00",
+        "onpropertytype": "msg",
+        "onproperty": "payload",
+        "onvaluetype": "num",
+        "onvalue": 1,
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "onsuppressrepeats": false,
+        "offtype": "2",
+        "offtimesun": "dusk",
+        "offtimetod": "00:00:00",
+        "offduration": "00:01:00",
+        "offpropertytype": "msg",
+        "offproperty": "payload",
+        "offvaluetype": "num",
+        "offvalue": 0,
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "offsuppressrepeats": false,
+        "resend": false,
+        "resendInterval": "0s",
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "2b6a6e6d6551d775"
+            ]
+        ]
+    },
+    {
+        "id": "78bb650473da63bb",
+        "type": "inject",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "2b6a6e6d6551d775"
+            ]
+        ]
+    },
+    {
+        "id": "c7b42ea35ce6fa2c",
+        "type": "function",
+        "z": "f890255551479538",
+        "g": "88b6d3d2d455714b",
+        "name": "Random Effect",
+        "func": "const effects = [\n  \"1 Snow\",\n  \"2 Candy Cane\",\n  \"3 Glow\",\n  \"4 Carnival\",\n  \"5 Paradise\",\n  \"6 Bliss\",\n  \"7 Cotton Candy\",\n  \"8 Vintage\",\n  \"9 Dreamy Flow\",\n  \"10 Waves\",\n  \"11 Unicorn Sun\",\n  \"12 Christmas Spirit\",\n  \"13 Eclipse\",\n  \"14 Magic R-bow\"\n];\n\nfunction setRandomEffect() {\n  var tempTreeEffect = effects[Math.floor(Math.random() * effects.length)];\n  msg.treeEffect = tempTreeEffect;\n}\n\nsetRandomEffect();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a74362e1963807c4",
+        "type": "ha-time",
+        "z": "f890255551479538",
+        "d": true,
+        "g": "3a891c4a9f2a5fa3",
+        "name": "Kid's Bedtime",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.kids_bedtime",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": true,
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "e872208eeab9cbea",
+                "400ecdc8e3bb1045"
+            ]
+        ]
+    },
+    {
+        "id": "e872208eeab9cbea",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "Sunset Ceiling Light",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "lifx.effect_sky",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.izzy_ceiling_light"
+        ],
+        "labelId": [],
+        "data": "{\t   \"speed\":180,\t   \"sky_type\":\"Clouds\",\t   \"cloud_saturation_min\":50,\t   \"cloud_saturation_max\":180,\t   \"palette\":[\t       \"[200, 1, 1, 3500]\",\t       \"[241, 1, 0.01, 3500]\",\t       \"[189, 1, 0.08, 3500]\",\t       \"[40, 1, 1, 3500]\",\t       \"[40, 0.5, 1, 3500]\",\t       \"[40, 0, 1, 6500]\"\t   ]\t}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "lifx",
+        "service": "effect_sky",
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "529343a629f3edde",
+                "34b7543bbbf8ee2c"
+            ]
+        ]
+    },
+    {
+        "id": "400ecdc8e3bb1045",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "Turn Off Lamp",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.isabelle"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 320,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "529343a629f3edde",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "Uplight to Nightlight",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "lifx_ceiling.set_state",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\t  \"device_id\":\"ea1730975d667e3e1e6a8594738ebbcf\",\t   \"uplight_hue\":238,\t   \"uplight_saturation\":84,\t   \"uplight_brightness\":15,\t   \"transition\":5\t}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "lifx_ceiling",
+        "service": "set_state",
+        "x": 580,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b806c945bc4e4c11",
+        "type": "inject",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "e872208eeab9cbea",
+                "400ecdc8e3bb1045"
+            ]
+        ]
+    },
+    {
+        "id": "34b7543bbbf8ee2c",
+        "type": "delay",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "180",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "5abe33190922ea98"
+            ]
+        ]
+    },
+    {
+        "id": "5abe33190922ea98",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "g": "3a891c4a9f2a5fa3",
+        "name": "Turn Off Downlight",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.izzy_downlight"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f28cda89d620332",
+        "type": "time-range-switch",
+        "z": "f890255551479538",
+        "name": "",
+        "lat": "42.298231",
+        "lon": "-71.839396",
+        "startTime": "00:00",
+        "endTime": "sunriseEnd",
+        "startOffset": 0,
+        "endOffset": 0,
+        "x": 490,
+        "y": 400,
+        "wires": [
+            [
+                "a9ac1e438ab8775e"
+            ],
+            [
+                "9ae97f649bf97bef"
+            ]
+        ]
+    },
+    {
+        "id": "b86dfb66f70bf868",
+        "type": "time-range-switch",
+        "z": "f890255551479538",
+        "name": "",
+        "lat": "42.298231",
+        "lon": "-71.839396",
+        "startTime": "00:00",
+        "endTime": "sunriseEnd",
+        "startOffset": 0,
+        "endOffset": 0,
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "a0a87120ffcf8a1c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3ad3350dc471d3a9",
+        "type": "time-range-switch",
+        "z": "f890255551479538",
+        "name": "",
+        "lat": "42.298231",
+        "lon": "-71.839396",
+        "startTime": "00:00",
+        "endTime": "sunriseEnd",
+        "startOffset": 0,
+        "endOffset": 0,
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [],
+            [
+                "f2012ca528a7281c"
+            ]
+        ]
+    },
+    {
+        "id": "5435ae65ee21b09f",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Front Door Opened",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.front_door"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "on",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "ee300aefef750ee2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "906a2db795688f0f",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alert Chime",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "siren.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "siren.chime_siren_play_tone"
+        ],
+        "labelId": [],
+        "data": "{\"tone\":\"21\",\"volume_level\":1}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "siren",
+        "service": "turn_on",
+        "x": 590,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc721633bcbb7e52",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Patio Door Opened",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.patio_door"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "on",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "6f0c69cdaf3d40b2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ed4524bb347a2033",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Garage Door Opened",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.garage_door"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "on",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "54f45a70f213b3c6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1834aef408dada1a",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alert Chime",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "siren.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "siren.chime_siren_play_tone"
+        ],
+        "labelId": [],
+        "data": "{\"tone\":\"23\",\"volume_level\":1}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "siren",
+        "service": "turn_on",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d521ac9f2376286b",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alert Chime",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "siren.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "siren.chime_siren_play_tone"
+        ],
+        "labelId": [],
+        "data": "{\"tone\":\"24\",\"volume_level\":1}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "siren",
+        "service": "turn_on",
+        "x": 590,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6ea72470223e7ef",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Basement Door Opened",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.basement_door_2"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "on",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "0850dc3ee1d5582f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dae552f76ee48f0c",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alert Chime",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "siren.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "siren.chime_siren_play_tone"
+        ],
+        "labelId": [],
+        "data": "{\"tone\":\"22\",\"volume_level\":1}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "siren",
+        "service": "turn_on",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee300aefef750ee2",
+        "type": "api-current-state",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alarm Disarmed",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "Disarmed",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "alarm_control_panel.alarmo",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [],
+            [
+                "906a2db795688f0f"
+            ]
+        ]
+    },
+    {
+        "id": "54f45a70f213b3c6",
+        "type": "api-current-state",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alarm Disarmed",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "Disarmed",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "alarm_control_panel.alarmo",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "d521ac9f2376286b"
+            ]
+        ]
+    },
+    {
+        "id": "0850dc3ee1d5582f",
+        "type": "api-current-state",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alarm Disarmed",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "Disarmed",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "alarm_control_panel.alarmo",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [],
+            [
+                "dae552f76ee48f0c"
+            ]
+        ]
+    },
+    {
+        "id": "6f0c69cdaf3d40b2",
+        "type": "api-current-state",
+        "z": "1b0d2a649eef07c6",
+        "g": "d112e7e3977cefe4",
+        "name": "Alarm Disarmed",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "Disarmed",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "alarm_control_panel.alarmo",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [],
+            [
+                "1834aef408dada1a"
+            ]
+        ]
+    },
+    {
+        "id": "2617b7ce20d237c6",
+        "type": "debug",
+        "z": "d1b7e22ea16d084a",
+        "name": "allergy debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "data.attributes",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d1ba70701e6d873b",
+        "type": "debug",
+        "z": "d1b7e22ea16d084a",
+        "name": "allergen",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f7f11f4da5bc3613",
+        "type": "function",
+        "z": "d1b7e22ea16d084a",
+        "name": "Allergen Extraction",
+        "func": "function extractAllergenData(sensorData) {\n    const allergenData = {\n        allergenAlert: false,\n        allergens: []\n    };\n    for (const key in sensorData.attributes) {\n        switch (sensorData.attributes[key]) {\n            case \"Alnus\": // Alder\n                node.warn(\"Alder\")\n                allergenData.allergens.push(\"Alder\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Eucalyptus\": // Eucalyptus\n                node.warn(\"Eucalyptus\")\n                allergenData.allergens.push(\"Eucalyptus\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Liquidambar\": // Sweet Gum\n                node.warn(\"Sweet Gum\")\n                allergenData.allergens.push(\"Sweet Gum\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Xanthium\": // Cockleburr\n                node.warn(\"Cockleburr\")\n                allergenData.allergens.push(\"Cockleburr\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Betula\": // Birch\n                node.warn(\"Birch\")\n                allergenData.allergens.push(\"Birch\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Juniper\": // Juniper\n                node.warn(\"Juniper\")\n                allergenData.allergens.push(\"Juniper\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Acer\": // Maple, Box Elder\n                node.warn(\"Maple, Box Elder\")\n                allergenData.allergens.push(\"Maple, Box Elder\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Quercus\": // Oak\n                node.warn(\"Oak\")\n                allergenData.allergens.push(\"Oak\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Schinus\": // Peppertree\n                node.warn(\"Peppertree\")\n                allergenData.allergens.push(\"Peppertree\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Pinus\": // Pine\n                node.warn(\"Pine\")\n                allergenData.allergens.push(\"Pine\");\n                allergenData.allergenAlert = true;\n                break;\n            case \"Ambrosia\": // Ragweed\n                node.warn(\"Ragweed\")\n                allergenData.allergens.push(\"Ragweed\");\n                allergenData.allergenAlert = true;\n                break;\n            default:\n                break;\n        }\n    }\n    msg.payload = allergenData;\n    return msg;\n}\n\nextractAllergenData(msg.data)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "f1e1b1ea762e0daf",
+                "25f7c60005dfbb3f"
+            ]
+        ]
+    },
+    {
+        "id": "e4b9ebabda937aab",
+        "type": "api-current-state",
+        "z": "d1b7e22ea16d084a",
+        "name": "Allergy Today",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "6.0",
+        "halt_if_type": "num",
+        "halt_if_compare": "gte",
+        "entity_id": "sensor.allergy_index_today",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "f7f11f4da5bc3613"
+            ],
+            [
+                "35f436330b8de2cf"
+            ]
+        ]
+    },
+    {
+        "id": "81cc8795f694c61e",
+        "type": "api-current-state",
+        "z": "d1b7e22ea16d084a",
+        "name": "Allergy Tomorrow",
+        "server": "db559b8fb32ae329",
+        "version": 3,
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "sensor.allergy_index_tomorrow",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "2617b7ce20d237c6"
+            ]
+        ]
+    },
+    {
+        "id": "8998ad9663ae136f",
+        "type": "inject",
+        "z": "d1b7e22ea16d084a",
+        "name": "12:30am Daily",
+        "props": [],
+        "repeat": "",
+        "crontab": "30 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "e4b9ebabda937aab"
+            ]
+        ]
+    },
+    {
+        "id": "ac859ec370acb451",
+        "type": "inject",
+        "z": "d1b7e22ea16d084a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "81cc8795f694c61e"
+            ]
+        ]
+    },
+    {
+        "id": "35d6dcf5b2f17d89",
+        "type": "inject",
+        "z": "d1b7e22ea16d084a",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "v": "{\"state\":45,\"attributes\":{\"allergen_type_0\":\"abc\",\"allergen_name_0\":\"zero\",\"allergen_type_1\":\"TREE\",\"allergen_name_1\":\"one\",\"allergen_type_2\":\"xyz\",\"allergen_name_2\":\"two\"}}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 580,
+        "wires": [
+            [
+                "6bde52e52ab35bab"
+            ]
+        ]
+    },
+    {
+        "id": "d901c4e3d312fe6b",
+        "type": "debug",
+        "z": "d1b7e22ea16d084a",
+        "name": "debug 144",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6bde52e52ab35bab",
+        "type": "function",
+        "z": "d1b7e22ea16d084a",
+        "name": "function 33",
+        "func": "function extractAllergenData(sensorData) {    \n    const allergenData = {\n        level: sensorData.state,\n    };    \n\n    for(const key in sensorData.attributes) {                \n        if(sensorData.attributes[key] === \"TREE\") {\n            const index = key.replace(\"allergen_type_\", \"\");\n            allergenData.name =sensorData.attributes[`allergen_name_${index}`];\n        }\n    }\n    \n    msg.payload = allergenData;\n    // node.warn(allergenData);\n    // let match = 1;\n    // for (const key in sensorData.attributes) {\n    //     if (key.match(/^allergen_type_\\d+$/)) {\n    //         const allergenName = sensorData.attributes[`allergen_name_${match}`];\n    //         node.warn(match);\n    //         node.warn(allergenName);\n    //         allergenData.push({\n    //             allergenType: sensorData.attributes[key],\n    //             allergenName\n    //         });\n    //         match++;\n    //     }\n    // }\n    // msg.payload = allergenData;\n    // node.warn(msg.payload);\n}\n\nextractAllergenData(msg.topic)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 580,
+        "wires": [
+            [
+                "d901c4e3d312fe6b"
+            ]
+        ]
+    },
+    {
+        "id": "f1e1b1ea762e0daf",
+        "type": "switch",
+        "z": "d1b7e22ea16d084a",
+        "name": "",
+        "property": "payload.allergenAlert",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "d6312e6db7e41e38",
+                "d1ba70701e6d873b"
+            ],
+            [
+                "d1ba70701e6d873b",
+                "35f436330b8de2cf"
+            ]
+        ]
+    },
+    {
+        "id": "d6312e6db7e41e38",
+        "type": "api-call-service",
+        "z": "d1b7e22ea16d084a",
+        "name": "Allergy Alert - Enable",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.allergy_alert"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "x": 680,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35f436330b8de2cf",
+        "type": "api-call-service",
+        "z": "d1b7e22ea16d084a",
+        "name": "Allergy Alert - Disable",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.allergy_alert"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "x": 680,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25f7c60005dfbb3f",
+        "type": "debug",
+        "z": "d1b7e22ea16d084a",
+        "name": "allergen alert",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.allergenAlert",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "627c2c8b41c96e81",
+        "type": "inject",
+        "z": "d1b7e22ea16d084a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "f7f11f4da5bc3613"
+            ]
+        ]
+    },
+    {
+        "id": "849720e5f4641931",
+        "type": "inject",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Daily @ 12pm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 12 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "9797c6b34ed4ba16"
+            ]
+        ]
+    },
+    {
+        "id": "9797c6b34ed4ba16",
+        "type": "ha-get-entities",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "",
+        "server": "db559b8fb32ae329",
+        "version": 1,
+        "rules": [
+            {
+                "condition": "state_object",
+                "property": "entity_id",
+                "logic": "is",
+                "value": "^(input_number|sensor)\\..*heloc.*$",
+                "valueType": "re"
+            }
+        ],
+        "outputType": "array",
+        "outputEmptyResults": false,
+        "outputLocationType": "msg",
+        "outputLocation": "payload",
+        "outputResultsCount": 1,
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "24a610122a86761f",
+                "65e4123bdde2b102"
+            ]
+        ]
+    },
+    {
+        "id": "b0ea380f4d03fc99",
+        "type": "switch",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "APR",
+        "property": "payload[1].state",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "payload[0].state",
+                "vt": "msg"
+            },
+            {
+                "t": "lt",
+                "v": "payload[0].state",
+                "vt": "msg"
+            },
+            {
+                "t": "eq",
+                "v": "payload[0].state",
+                "vt": "msg"
+            }
+        ],
+        "checkall": true,
+        "repair": false,
+        "outputs": 3,
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "c91ff4b712a2a756"
+            ],
+            [
+                "9da8996f5673d23c"
+            ],
+            [
+                "1e73155275dddc89"
+            ]
+        ]
+    },
+    {
+        "id": "c91ff4b712a2a756",
+        "type": "function",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Greater Than Message",
+        "func": "msg.payload = \"HELOC APR increased by \" + (msg.payload[1].state - msg.payload[0].state).toFixed(3) + \"%\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "390bcd37bac3b157"
+            ]
+        ]
+    },
+    {
+        "id": "9da8996f5673d23c",
+        "type": "function",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Less Than Message",
+        "func": "msg.payload = \"HELOC APR decreased by \" + (msg.payload[0].state - msg.payload[1].state).toFixed(3) + \"%\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "390bcd37bac3b157"
+            ]
+        ]
+    },
+    {
+        "id": "1e73155275dddc89",
+        "type": "function",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Equal Message",
+        "func": "msg.payload = \"HELOC APR is \" + msg.payload[1].state + \"%\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [
+                "390bcd37bac3b157"
+            ]
+        ]
+    },
+    {
+        "id": "390bcd37bac3b157",
+        "type": "api-call-service",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Notify Mobile",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\": payload }",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "output_location": "",
+        "output_location_type": "none",
+        "mergecontext": "",
+        "x": 1200,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24a610122a86761f",
+        "type": "debug",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Payload Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "65e4123bdde2b102",
+        "type": "api-call-service",
+        "z": "1a80cdb33264de82",
+        "g": "6c232881c479efef",
+        "name": "Set Last HELOC APR",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_number.set_value",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_number.last_heloc_apr"
+        ],
+        "labelId": [],
+        "data": "{\"value\": payload[1].state}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "blockInputOverrides": false,
+        "domain": "input_number",
+        "service": "set_value",
+        "output_location": "",
+        "output_location_type": "none",
+        "mergecontext": "",
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "b0ea380f4d03fc99"
+            ]
+        ]
+    },
+    {
+        "id": "faa8534c12b282d6",
+        "type": "api-call-service",
+        "z": "1a80cdb33264de82",
+        "g": "e80cb7e91539c8a8",
+        "name": "Notify Flavia",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_flaphone",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\":\"Take your Iron and your Vitamin D.\",\"title\":\"Take your pills\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_flaphone",
+        "x": 350,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f14a76563e7fcc7",
+        "type": "inject",
+        "z": "1a80cdb33264de82",
+        "g": "e80cb7e91539c8a8",
+        "name": "Daily @ 9am",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 09 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "faa8534c12b282d6"
+            ]
+        ]
+    },
+    {
+        "id": "b4ed8a121d0b23e0",
+        "type": "debug",
+        "z": "1a80cdb33264de82",
+        "g": "321c4571ed2af216",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ba0439a.9e1d4c8",
+        "type": "ha-get-entities",
+        "z": "1a80cdb33264de82",
+        "g": "321c4571ed2af216",
+        "name": "",
+        "server": "db559b8fb32ae329",
+        "version": 1,
+        "rules": [
+            {
+                "condition": "state_object",
+                "property": "entity_id",
+                "logic": "is",
+                "value": "^(sensor).*_battery$",
+                "valueType": "re"
+            },
+            {
+                "condition": "state_object",
+                "property": "state",
+                "logic": "lte",
+                "value": "15",
+                "valueType": "num"
+            }
+        ],
+        "outputType": "split",
+        "outputEmptyResults": false,
+        "outputLocationType": "msg",
+        "outputLocation": "payload",
+        "outputResultsCount": 1,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "b70884a8.66beb8",
+                "b4ed8a121d0b23e0"
+            ]
+        ]
+    },
+    {
+        "id": "26160118.86d24e",
+        "type": "inject",
+        "z": "1a80cdb33264de82",
+        "g": "321c4571ed2af216",
+        "name": "Sunday @ 9am",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 09 * * 0",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "ba0439a.9e1d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "b70884a8.66beb8",
+        "type": "api-call-service",
+        "z": "1a80cdb33264de82",
+        "g": "321c4571ed2af216",
+        "name": "Notify Dad",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\":\"{{payload.attributes.friendly_name}} has a battery level of {{payload.state}}%\",\"title\":\"Low Battery Alert\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "x": 590,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    }
+]
