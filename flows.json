@@ -289,9 +289,9 @@
             "81865fd4430f4ca4",
             "5089962daac63499"
         ],
-        "x": 14,
+        "x": 24,
         "y": 19,
-        "w": 2292,
+        "w": 2282,
         "h": 589.5
     },
     {
@@ -371,8 +371,8 @@
         ],
         "connectionDelay": true,
         "cacheJson": true,
-        "heartbeat": false,
-        "heartbeatInterval": 30,
+        "heartbeat": true,
+        "heartbeatInterval": "90",
         "areaSelector": "friendlyName",
         "deviceSelector": "friendlyName",
         "entitySelector": "friendlyName",
