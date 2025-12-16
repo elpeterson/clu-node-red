@@ -56,64 +56,6 @@
         "out": []
     },
     {
-        "id": "56ac08cc0ea83117",
-        "type": "subflow",
-        "name": "Subflow 2",
-        "info": "",
-        "in": [],
-        "out": [
-            {
-                "x": 420,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "2c450a36b3af65a4",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 720,
-                "y": 140,
-                "wires": [
-                    {
-                        "id": "47c9fd3a9dc33e76",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 1280,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "7541c70094d05ef7",
-                        "port": 0
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": "4b6ab7ae6d07454d",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "in": [],
-        "out": [
-            {
-                "x": 380,
-                "y": 120,
-                "wires": [
-                    {
-                        "id": "47525ec84dc4e30d",
-                        "port": 0
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "d112e7e3977cefe4",
         "type": "group",
         "z": "1b0d2a649eef07c6",
@@ -278,8 +220,6 @@
             "1cfadee5ffc8d4d8",
             "35cb56eb129944c6",
             "fa0216fd49d4af8e",
-            "5a03076f55e90f64",
-            "d5d831064a9c215b",
             "7f71baf3b6377c1b",
             "eb3550c96091b48f",
             "a480f65e15928547",
@@ -287,12 +227,18 @@
             "33d2697afbf77b47",
             "86e5932a65362b9a",
             "81865fd4430f4ca4",
-            "5089962daac63499"
+            "969a94dce7cc8633",
+            "d152782593cf0859",
+            "41af103e6dbdea9c",
+            "bba20aaffa7980b9",
+            "440c4b584743884f",
+            "f2bfff315dae2243",
+            "cc84076d5419e38f"
         ],
-        "x": 24,
+        "x": 14,
         "y": 19,
-        "w": 2282,
-        "h": 589.5
+        "w": 2292,
+        "h": 502
     },
     {
         "id": "6c232881c479efef",
@@ -565,275 +511,6 @@
         "statusType": "auto",
         "x": 760,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "2c450a36b3af65a4",
-        "type": "inject",
-        "z": "56ac08cc0ea83117",
-        "name": "Test From Alarm Gate",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 240,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "47c9fd3a9dc33e76",
-        "type": "inject",
-        "z": "56ac08cc0ea83117",
-        "name": "Test From Day of Week Gate",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 520,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7541c70094d05ef7",
-        "type": "inject",
-        "z": "56ac08cc0ea83117",
-        "name": "Test From Where To Alarm Gate",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1070,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "46a8d140189b496c",
-        "type": "inject",
-        "z": "4b6ab7ae6d07454d",
-        "name": "Test From MBDR Speaker",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
-        "y": 160,
-        "wires": [
-            [
-                "3fd4cc354ed6246c"
-            ]
-        ]
-    },
-    {
-        "id": "3fd4cc354ed6246c",
-        "type": "api-call-service",
-        "z": "4b6ab7ae6d07454d",
-        "name": "Alarm Speaker",
-        "server": "db559b8fb32ae329",
-        "version": 7,
-        "debugenabled": false,
-        "action": "spotcast.start",
-        "floorId": [],
-        "areaId": [],
-        "deviceId": [],
-        "entityId": [],
-        "labelId": [],
-        "data": "{\"entity_id\":\"media_player.alarm_speakers\",\"uri\":\"spotify:playlist:37i9dQZF1DXcBWIGoYBM5M\",\"force_playback\":false,\"random_song\":true,\"repeat\":\"off\",\"shuffle\":true,\"limit\":10}",
-        "dataType": "json",
-        "mergeContext": "",
-        "mustacheAltTags": false,
-        "outputProperties": [],
-        "queue": "none",
-        "blockInputOverrides": false,
-        "domain": "spotcast",
-        "service": "start",
-        "x": 480,
-        "y": 160,
-        "wires": [
-            [
-                "2fb7b7c13474f070"
-            ]
-        ]
-    },
-    {
-        "id": "2fb7b7c13474f070",
-        "type": "debug",
-        "z": "4b6ab7ae6d07454d",
-        "name": "Debug @ MBDR Speaker",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 690,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "47525ec84dc4e30d",
-        "type": "inject",
-        "z": "4b6ab7ae6d07454d",
-        "name": "Test After Delay",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 220,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8551a4f13323bc7a",
-        "type": "inject",
-        "z": "4b6ab7ae6d07454d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 540,
-        "y": 80,
-        "wires": [
-            [
-                "267a1c8133fb52fb"
-            ]
-        ]
-    },
-    {
-        "id": "267a1c8133fb52fb",
-        "type": "function",
-        "z": "4b6ab7ae6d07454d",
-        "name": "RandPlaylist()",
-        "func": "\nconst options = [\n    'spotify:playlist:37i9dQZF1DXcBWIGoYBM5M', // Today's Top Hits\n    'spotify:playlist:37i9dQZF1E375ju8n547l8', // Daily Mix 1\n    'spotify:playlist:37i9dQZF1E35r4IalTW8E9', // Daily Mix 2\n    'spotify:playlist:37i9dQZF1E37Zpje6YDmQh', // Daily Mix 3\n    'spotify:playlist:37i9dQZF1E36d4yIZYsGEt', // Daily Mix 4\n    'spotify:playlist:playlist/37i9dQZF1E39Xt1MJIH151', // Daily Mix 5\n    'spotify:playlist:37i9dQZF1E36Y3P1zfdePL' // Daily Mix 6\n];\nfunction getRandomOption() {\n    const randomIndex = Math.floor(Math.random() * options.length);\n\n    return options[randomIndex];\n}\n\nmsg.url = getRandomOption();\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 760,
-        "y": 80,
-        "wires": [
-            [
-                "1913c675dc18f7ca",
-                "a07273d194c6a07e"
-            ]
-        ]
-    },
-    {
-        "id": "1913c675dc18f7ca",
-        "type": "debug",
-        "z": "4b6ab7ae6d07454d",
-        "name": "randnum",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "a07273d194c6a07e",
-        "type": "debug",
-        "z": "4b6ab7ae6d07454d",
-        "name": "url",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "url",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 970,
-        "y": 120,
         "wires": []
     },
     {
@@ -1156,10 +833,10 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [
-            "media_player.mass_alarm_speakers"
+            "media_player.alarm_speakers"
         ],
         "labelId": [],
-        "data": "{\"media_id\":\"{{url}}\"}",
+        "data": "{\"media_id\":\"{{url}}\",\"media_type\":\"playlist\"}",
         "dataType": "json",
         "mergeContext": "",
         "mustacheAltTags": false,
@@ -1229,7 +906,7 @@
         "floorId": [],
         "areaId": [],
         "deviceId": [
-            "e3cca36cd2d67edb4b1f65181e4ae727"
+            "cd3f4667d4f7b4ed98f709abdefb5048"
         ],
         "entityId": [],
         "labelId": [],
@@ -1626,7 +1303,7 @@
         "z": "f10ac060eea27bb3",
         "g": "99e9a9a72c807ddf",
         "name": "RandPlaylist()",
-        "func": "\nconst options = [\n    'spotify:playlist:37i9dQZF1DXcBWIGoYBM5M', // Today's Top Hits\n    'spotify:playlist:37i9dQZF1E375ju8n547l8', // Daily Mix 1\n    'spotify:playlist:37i9dQZF1E35r4IalTW8E9', // Daily Mix 2\n    'spotify:playlist:37i9dQZF1E37Zpje6YDmQh', // Daily Mix 3\n    'spotify:playlist:37i9dQZF1E36d4yIZYsGEt', // Daily Mix 4\n    'spotify:playlist:playlist/37i9dQZF1E39Xt1MJIH151', // Daily Mix 5\n    'spotify:playlist:37i9dQZF1E36Y3P1zfdePL' // Daily Mix 6\n];\nfunction getRandomOption() {\n    const randomIndex = Math.floor(Math.random() * options.length);\n\n    return options[randomIndex];\n}\n\nmsg.url = getRandomOption();\n\nreturn msg;",
+        "func": "\nconst options = [\n    'spotify:playlist:37i9dQZF1E375ju8n547l8', // Daily Mix 1\n    'spotify:playlist:37i9dQZF1E35r4IalTW8E9', // Daily Mix 2\n    'spotify:playlist:37i9dQZF1E37Zpje6YDmQh', // Daily Mix 3\n    'spotify:playlist:37i9dQZF1E36d4yIZYsGEt', // Daily Mix 4\n    'spotify:playlist:playlist/37i9dQZF1E39Xt1MJIH151', // Daily Mix 5\n    'spotify:playlist:37i9dQZF1E36Y3P1zfdePL' // Daily Mix 6\n];\nfunction getRandomOption() {\n    const randomIndex = Math.floor(Math.random() * options.length);\n\n    return options[randomIndex];\n}\n\nmsg.url = getRandomOption();\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2114,49 +1791,13 @@
         ]
     },
     {
-        "id": "5a03076f55e90f64",
-        "type": "subflow:4b6ab7ae6d07454d",
-        "z": "f10ac060eea27bb3",
-        "g": "99e9a9a72c807ddf",
-        "name": "More Testing",
-        "x": 1770,
-        "y": 460,
-        "wires": [
-            [
-                "6528f6a488b27e91"
-            ]
-        ]
-    },
-    {
-        "id": "d5d831064a9c215b",
-        "type": "subflow:56ac08cc0ea83117",
-        "z": "f10ac060eea27bb3",
-        "g": "99e9a9a72c807ddf",
-        "name": "Testing",
-        "x": 570,
-        "y": 560,
-        "wires": [
-            [
-                "35cb56eb129944c6"
-            ],
-            [
-                "f4caee45564c1125"
-            ],
-            [
-                "698e3878397ac4d1",
-                "8ab82e132915bf6f",
-                "9ffb467613ba286b"
-            ]
-        ]
-    },
-    {
         "id": "7f71baf3b6377c1b",
         "type": "subflow:d0a82c2bf338c781",
         "z": "f10ac060eea27bb3",
         "g": "99e9a9a72c807ddf",
         "name": "School Calendar Check",
-        "x": 560,
-        "y": 360,
+        "x": 640,
+        "y": 380,
         "wires": []
     },
     {
@@ -2304,7 +1945,7 @@
         "server": "db559b8fb32ae329",
         "version": 3,
         "outputs": 2,
-        "halt_if": "on",
+        "halt_if": "off",
         "halt_if_type": "str",
         "halt_if_compare": "is",
         "entity_id": "input_boolean.no_school",
@@ -2344,8 +1985,7 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [
-            "media_player.mass_alarm_speakers",
-            "media_player.mass_main_bedroom_speaker"
+            "media_player.main_bedroom_speaker"
         ],
         "labelId": [],
         "data": "{\"media_id\":\"{{url}}\"}",
@@ -2364,7 +2004,127 @@
         ]
     },
     {
-        "id": "5089962daac63499",
+        "id": "969a94dce7cc8633",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Test After Delays",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "6528f6a488b27e91"
+            ]
+        ]
+    },
+    {
+        "id": "d152782593cf0859",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Test From Alarm Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "35cb56eb129944c6"
+            ]
+        ]
+    },
+    {
+        "id": "41af103e6dbdea9c",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Test From Day of Week Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bba20aaffa7980b9",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "Test From Where To Alarm Gate",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "698e3878397ac4d1",
+                "8ab82e132915bf6f",
+                "9ffb467613ba286b"
+            ]
+        ]
+    },
+    {
+        "id": "440c4b584743884f",
         "type": "inject",
         "z": "f10ac060eea27bb3",
         "g": "99e9a9a72c807ddf",
@@ -2385,14 +2145,74 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 880,
+        "x": 1880,
         "y": 420,
         "wires": [
             [
-                "9ffb467613ba286b",
-                "8ab82e132915bf6f",
-                "698e3878397ac4d1"
+                "7d0567e8f594bbb4"
             ]
+        ]
+    },
+    {
+        "id": "f2bfff315dae2243",
+        "type": "inject",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1880,
+        "y": 480,
+        "wires": [
+            [
+                "cc84076d5419e38f"
+            ]
+        ]
+    },
+    {
+        "id": "cc84076d5419e38f",
+        "type": "api-call-service",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "media_player.media_stop",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "media_player.alarm_speakers"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "media_player",
+        "service": "media_stop",
+        "x": 2130,
+        "y": 480,
+        "wires": [
+            []
         ]
     },
     {
