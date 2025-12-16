@@ -3442,7 +3442,7 @@
         "server": "db559b8fb32ae329",
         "version": 7,
         "debugenabled": false,
-        "action": "",
+        "action": "light.turn_on",
         "floorId": [],
         "areaId": [],
         "deviceId": [
