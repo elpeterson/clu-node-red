@@ -233,7 +233,8 @@
             "bba20aaffa7980b9",
             "440c4b584743884f",
             "f2bfff315dae2243",
-            "cc84076d5419e38f"
+            "cc84076d5419e38f",
+            "79c17ee3aa0d80f8"
         ],
         "x": 14,
         "y": 19,
@@ -358,9 +359,9 @@
             "regex": []
         },
         "outputInitially": true,
-        "stateType": "habool",
-        "ifState": "true",
-        "ifStateType": "bool",
+        "stateType": "str",
+        "ifState": "No School",
+        "ifStateType": "str",
         "ifStateOperator": "is",
         "outputOnlyOnStateChange": false,
         "for": "0",
@@ -484,7 +485,7 @@
         "id": "405383baa3a3a4b2",
         "type": "debug",
         "z": "d0a82c2bf338c781",
-        "name": "debug 3",
+        "name": "School?",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -493,7 +494,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
+        "x": 420,
         "y": 200,
         "wires": []
     },
@@ -501,15 +502,16 @@
         "id": "60cb651167cc1d80",
         "type": "debug",
         "z": "d0a82c2bf338c781",
-        "name": "debug 4",
+        "name": "No School Toggle State",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
+        "x": 810,
         "y": 160,
         "wires": []
     },
@@ -765,7 +767,7 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [
-            "light.isabelle"
+            "light.izzy_lamp"
         ],
         "labelId": [],
         "data": "{\"brightness_pct\":\"100\"}",
@@ -799,7 +801,7 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [
-            "light.gavin"
+            "light.gavin_lamp"
         ],
         "labelId": [],
         "data": "{\"brightness_pct\":\"100\"}",
@@ -836,7 +838,7 @@
             "media_player.alarm_speakers"
         ],
         "labelId": [],
-        "data": "{\"media_id\":\"{{url}}\",\"media_type\":\"playlist\"}",
+        "data": "{\"media_id\":\"{{url}}\"}",
         "dataType": "json",
         "mergeContext": "",
         "mustacheAltTags": false,
@@ -1314,7 +1316,8 @@
         "y": 320,
         "wires": [
             [
-                "86e5932a65362b9a"
+                "86e5932a65362b9a",
+                "79c17ee3aa0d80f8"
             ]
         ]
     },
@@ -2149,7 +2152,7 @@
         "y": 420,
         "wires": [
             [
-                "7d0567e8f594bbb4"
+                "6528f6a488b27e91"
             ]
         ]
     },
@@ -2214,6 +2217,24 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "79c17ee3aa0d80f8",
+        "type": "debug",
+        "z": "f10ac060eea27bb3",
+        "g": "99e9a9a72c807ddf",
+        "name": "RandPlaylist",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2090,
+        "y": 420,
+        "wires": []
     },
     {
         "id": "a315d07f19f0b44b",
@@ -2711,6 +2732,298 @@
         "wires": []
     },
     {
+        "id": "97b6e1d2a00b5888",
+        "type": "ha-time",
+        "z": "268e18aa217b4aab",
+        "name": "Wake",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.thermostat_wake",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 70,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ee4acd479cb4110",
+        "type": "ha-time",
+        "z": "268e18aa217b4aab",
+        "name": "Day",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.thermostat_day",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 70,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1efe854589298da5",
+        "type": "ha-time",
+        "z": "268e18aa217b4aab",
+        "name": "Sleep",
+        "server": "db559b8fb32ae329",
+        "version": 4,
+        "exposeAsEntityConfig": "",
+        "entityId": "input_datetime.thermostat_sleep",
+        "property": "",
+        "offset": "0",
+        "offsetType": "num",
+        "offsetUnits": "minutes",
+        "randomOffset": false,
+        "repeatDaily": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "sunday": true,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "ignorePastDate": false,
+        "x": 70,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b65dd254dbf07327",
+        "type": "server-state-changed",
+        "z": "268e18aa217b4aab",
+        "name": "Eric",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.eric"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 70,
+        "y": 680,
+        "wires": [
+            [
+                "cbfa8db8cefb75e8"
+            ]
+        ]
+    },
+    {
+        "id": "533c0611a65f7db5",
+        "type": "server-state-changed",
+        "z": "268e18aa217b4aab",
+        "name": "Flavia",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.flavia"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 70,
+        "y": 720,
+        "wires": [
+            [
+                "cbfa8db8cefb75e8"
+            ]
+        ]
+    },
+    {
+        "id": "cbfa8db8cefb75e8",
+        "type": "switch",
+        "z": "268e18aa217b4aab",
+        "name": "Zones",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not_home",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 700,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
         "id": "a9ac1e438ab8775e",
         "type": "switch",
         "z": "f890255551479538",
@@ -2942,7 +3255,7 @@
         "outputs": 2,
         "entities": {
             "entity": [
-                "binary_sensor.fp1_presence"
+                "binary_sensor.living_room_fp1_presence"
             ],
             "substring": [],
             "regex": []
@@ -2976,7 +3289,7 @@
         "outputs": 2,
         "entities": {
             "entity": [
-                "sensor.fp1_movement"
+                "sensor.living_room_fp1_movement"
             ],
             "substring": [],
             "regex": []
@@ -3162,8 +3475,8 @@
         "entities": {
             "entity": [
                 "binary_sensor.trisensor_motion_detection_2",
-                "sensor.fp1_movement",
-                "binary_sensor.fp1_presence"
+                "sensor.living_room_fp1_movement",
+                "binary_sensor.living_room_fp1_presence"
             ],
             "substring": [],
             "regex": []
@@ -3312,7 +3625,7 @@
         "outputs": 2,
         "entities": {
             "entity": [
-                "binary_sensor.fp1_presence"
+                "binary_sensor.living_room_fp1_presence"
             ],
             "substring": [],
             "regex": []
@@ -3673,7 +3986,7 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [
-            "light.isabelle"
+            "light.izzy_lamp"
         ],
         "labelId": [],
         "data": "",
