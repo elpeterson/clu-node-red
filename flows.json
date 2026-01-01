@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "3e6814fd0f8088e6",
+        "type": "tab",
+        "label": "Transmogrifier",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "d0a82c2bf338c781",
         "type": "subflow",
         "name": "Subflow 3",
@@ -277,9 +285,9 @@
             "faa8534c12b282d6",
             "0f14a76563e7fcc7"
         ],
-        "x": 34,
+        "x": 44,
         "y": 199,
-        "w": 412,
+        "w": 402,
         "h": 82
     },
     {
@@ -296,9 +304,9 @@
             "26160118.86d24e",
             "b70884a8.66beb8"
         ],
-        "x": 34,
+        "x": 44,
         "y": 19,
-        "w": 712,
+        "w": 702,
         "h": 142
     },
     {
@@ -5558,6 +5566,223 @@
         "x": 590,
         "y": 60,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60536a7729b6f4d3",
+        "type": "server-state-changed",
+        "z": "3e6814fd0f8088e6",
+        "name": "Transmogrifier Status",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.x1c_00m00a2a1402639_print_status"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": false,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "30a12dcd35ab51d1"
+            ]
+        ]
+    },
+    {
+        "id": "30a12dcd35ab51d1",
+        "type": "switch",
+        "z": "3e6814fd0f8088e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Running",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Pause",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Idle",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Finish",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            [],
+            [
+                "15601ca005a79aeb"
+            ]
+        ]
+    },
+    {
+        "id": "15601ca005a79aeb",
+        "type": "api-call-service",
+        "z": "3e6814fd0f8088e6",
+        "name": "Notify Dad",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"title\":\"Print Done\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "x": 510,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bccfb42106767e3",
+        "type": "server-state-changed",
+        "z": "3e6814fd0f8088e6",
+        "name": "HMS Errors",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "binary_sensor.x1c_00m00a2a1402639_hms_errors"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": false,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "0297f1dc72f9aaff"
+            ]
+        ]
+    },
+    {
+        "id": "0297f1dc72f9aaff",
+        "type": "switch",
+        "z": "3e6814fd0f8088e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Problem",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [],
             []
         ]
     }
