@@ -3,7 +3,7 @@
         "id": "f10ac060eea27bb3",
         "type": "tab",
         "label": "Family Bell",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -11,7 +11,7 @@
         "id": "268e18aa217b4aab",
         "type": "tab",
         "label": "Thermostats",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -19,7 +19,7 @@
         "id": "f890255551479538",
         "type": "tab",
         "label": "Lights / Switches",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -27,7 +27,7 @@
         "id": "1b0d2a649eef07c6",
         "type": "tab",
         "label": "Presence",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -35,7 +35,7 @@
         "id": "d1b7e22ea16d084a",
         "type": "tab",
         "label": "Allergy",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -43,7 +43,7 @@
         "id": "1a80cdb33264de82",
         "type": "tab",
         "label": "Maintenance",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -51,7 +51,7 @@
         "id": "3e6814fd0f8088e6",
         "type": "tab",
         "label": "Transmogrifier",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -148,14 +148,13 @@
             "label": true
         },
         "nodes": [
-            "a315d07f19f0b44b",
             "aeb83134f0493158",
             "fd80e75febb0a6b0",
             "5d874519c5eb74dc"
         ],
         "x": 14,
         "y": 19,
-        "w": 492,
+        "w": 372,
         "h": 142
     },
     {
@@ -268,8 +267,8 @@
             "24a610122a86761f",
             "65e4123bdde2b102"
         ],
-        "x": 34,
-        "y": 319,
+        "x": 14,
+        "y": 279,
         "w": 1262,
         "h": 202
     },
@@ -285,8 +284,8 @@
             "faa8534c12b282d6",
             "0f14a76563e7fcc7"
         ],
-        "x": 44,
-        "y": 199,
+        "x": 24,
+        "y": 179,
         "w": 402,
         "h": 82
     },
@@ -304,10 +303,76 @@
             "26160118.86d24e",
             "b70884a8.66beb8"
         ],
-        "x": 44,
+        "x": 24,
         "y": 19,
         "w": 702,
         "h": 142
+    },
+    {
+        "id": "658dd8ef57052fbc",
+        "type": "group",
+        "z": "1b0d2a649eef07c6",
+        "name": "Where are we?",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e952c4222c72dfd5",
+            "57a6bab491ad0ba4",
+            "1af6a1d45a765914",
+            "ae1643a9f8f919db",
+            "6eac15571b031c2f",
+            "25814f01a326a678",
+            "020d8b531d87afb5",
+            "d66cbade39b4b7d8"
+        ],
+        "x": 14,
+        "y": 299,
+        "w": 452,
+        "h": 262
+    },
+    {
+        "id": "43e3d99ff6a09c4d",
+        "type": "group",
+        "z": "268e18aa217b4aab",
+        "name": "Hourly Circulation",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7d22dc58d7a60c9e",
+            "8bdeb8ba9f67ae25",
+            "f17ba328c5df4950",
+            "38cf0b4186fdb449",
+            "be852847aa18f7b3",
+            "699adaf1c8e2ca27",
+            "146d993e20cfca2a",
+            "73c1260df2ef4912",
+            "619a246034753b9b",
+            "56598b21a1b8aba9",
+            "a47112ecc55086de",
+            "cfaf0c85f5f85707",
+            "12939e2bb7051720",
+            "3ad7dae55ae73c76",
+            "b1cec89ea69f87f3",
+            "0a4944bb4c9f9d0c",
+            "7545a875fcb35b63"
+        ],
+        "x": 14,
+        "y": 499,
+        "w": 932,
+        "h": 342
+    },
+    {
+        "id": "ca9ba5ca070f5117",
+        "type": "global-config",
+        "env": [
+            {
+                "name": "NODE_RED_ENABLE_PROJECTS",
+                "value": "true",
+                "type": "str"
+            }
+        ]
     },
     {
         "id": "db559b8fb32ae329",
@@ -324,7 +389,7 @@
             "home",
             "open"
         ],
-        "connectionDelay": true,
+        "connectionDelay": false,
         "cacheJson": true,
         "heartbeat": true,
         "heartbeatInterval": "90",
@@ -338,17 +403,6 @@
         "statusHourCycle": "default",
         "statusTimeFormat": "h:m",
         "enableGlobalContextStore": false
-    },
-    {
-        "id": "ca9ba5ca070f5117",
-        "type": "global-config",
-        "env": [
-            {
-                "name": "NODE_RED_ENABLE_PROJECTS",
-                "value": "true",
-                "type": "str"
-            }
-        ]
     },
     {
         "id": "ab1e534f78027f80",
@@ -916,7 +970,7 @@
         "floorId": [],
         "areaId": [],
         "deviceId": [
-            "cd3f4667d4f7b4ed98f709abdefb5048"
+            "062c3dbf8041e0d698ab5a821d6b3962"
         ],
         "entityId": [],
         "labelId": [],
@@ -2245,40 +2299,6 @@
         "wires": []
     },
     {
-        "id": "a315d07f19f0b44b",
-        "type": "switch",
-        "z": "268e18aa217b4aab",
-        "g": "cd5dc5c8e1229282",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "gt",
-                "v": "2",
-                "vt": "str"
-            },
-            {
-                "t": "lte",
-                "v": "2",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 230,
-        "y": 60,
-        "wires": [
-            [
-                "aeb83134f0493158"
-            ],
-            [
-                "fd80e75febb0a6b0"
-            ]
-        ]
-    },
-    {
         "id": "aeb83134f0493158",
         "type": "api-call-service",
         "z": "268e18aa217b4aab",
@@ -2305,7 +2325,7 @@
         "blockInputOverrides": false,
         "domain": "climate",
         "service": "set_preset_mode",
-        "x": 420,
+        "x": 300,
         "y": 60,
         "wires": [
             []
@@ -2338,7 +2358,7 @@
         "blockInputOverrides": false,
         "domain": "climate",
         "service": "set_preset_mode",
-        "x": 420,
+        "x": 300,
         "y": 120,
         "wires": [
             []
@@ -2352,18 +2372,18 @@
         "name": "Home",
         "server": "db559b8fb32ae329",
         "version": 6,
-        "outputs": 1,
+        "outputs": 2,
         "exposeAsEntityConfig": "",
         "entities": {
             "entity": [
-                "zone.home"
+                "input_boolean.bothhome"
             ],
             "substring": [],
             "regex": []
         },
         "outputInitially": true,
         "stateType": "str",
-        "ifState": "",
+        "ifState": "on",
         "ifStateType": "str",
         "ifStateOperator": "is",
         "outputOnlyOnStateChange": true,
@@ -2399,7 +2419,10 @@
         "y": 60,
         "wires": [
             [
-                "a315d07f19f0b44b"
+                "aeb83134f0493158"
+            ],
+            [
+                "fd80e75febb0a6b0"
             ]
         ]
     },
@@ -2783,7 +2806,7 @@
         "saturday": true,
         "ignorePastDate": false,
         "x": 70,
-        "y": 540,
+        "y": 880,
         "wires": [
             []
         ]
@@ -2832,7 +2855,7 @@
         "saturday": true,
         "ignorePastDate": false,
         "x": 70,
-        "y": 580,
+        "y": 920,
         "wires": [
             []
         ]
@@ -2881,41 +2904,56 @@
         "saturday": true,
         "ignorePastDate": false,
         "x": 70,
-        "y": 620,
+        "y": 960,
         "wires": [
             []
         ]
     },
     {
-        "id": "b65dd254dbf07327",
-        "type": "server-state-changed",
+        "id": "7d22dc58d7a60c9e",
+        "type": "inject",
         "z": "268e18aa217b4aab",
-        "name": "Eric",
+        "g": "43e3d99ff6a09c4d",
+        "name": "15 Minutes",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "900",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 540,
+        "wires": [
+            [
+                "8bdeb8ba9f67ae25"
+            ]
+        ]
+    },
+    {
+        "id": "8bdeb8ba9f67ae25",
+        "type": "api-current-state",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Both Home?",
         "server": "db559b8fb32ae329",
-        "version": 6,
-        "outputs": 1,
-        "exposeAsEntityConfig": "",
-        "entities": {
-            "entity": [
-                "person.eric"
-            ],
-            "substring": [],
-            "regex": []
-        },
-        "outputInitially": true,
-        "stateType": "str",
-        "ifState": "",
-        "ifStateType": "str",
-        "ifStateOperator": "is",
-        "outputOnlyOnStateChange": true,
-        "for": "0",
-        "forType": "num",
-        "forUnits": "minutes",
-        "ignorePrevStateNull": false,
-        "ignorePrevStateUnknown": false,
-        "ignorePrevStateUnavailable": false,
-        "ignoreCurrentStateUnknown": false,
-        "ignoreCurrentStateUnavailable": false,
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.bothhome",
+        "state_type": "str",
+        "blockInputOverrides": true,
         "outputProperties": [
             {
                 "property": "payload",
@@ -2927,107 +2965,423 @@
                 "property": "data",
                 "propertyType": "msg",
                 "value": "",
-                "valueType": "eventData"
-            },
-            {
-                "property": "topic",
-                "propertyType": "msg",
-                "value": "",
-                "valueType": "triggerId"
+                "valueType": "entity"
             }
         ],
-        "x": 70,
-        "y": 680,
-        "wires": [
-            [
-                "cbfa8db8cefb75e8"
-            ]
-        ]
-    },
-    {
-        "id": "533c0611a65f7db5",
-        "type": "server-state-changed",
-        "z": "268e18aa217b4aab",
-        "name": "Flavia",
-        "server": "db559b8fb32ae329",
-        "version": 6,
-        "outputs": 1,
-        "exposeAsEntityConfig": "",
-        "entities": {
-            "entity": [
-                "person.flavia"
-            ],
-            "substring": [],
-            "regex": []
-        },
-        "outputInitially": true,
-        "stateType": "str",
-        "ifState": "",
-        "ifStateType": "str",
-        "ifStateOperator": "is",
-        "outputOnlyOnStateChange": true,
         "for": "0",
         "forType": "num",
         "forUnits": "minutes",
-        "ignorePrevStateNull": false,
-        "ignorePrevStateUnknown": false,
-        "ignorePrevStateUnavailable": false,
-        "ignoreCurrentStateUnknown": false,
-        "ignoreCurrentStateUnavailable": false,
-        "outputProperties": [
-            {
-                "property": "payload",
-                "propertyType": "msg",
-                "value": "string",
-                "valueType": "entityState"
-            },
-            {
-                "property": "data",
-                "propertyType": "msg",
-                "value": "",
-                "valueType": "eventData"
-            },
-            {
-                "property": "topic",
-                "propertyType": "msg",
-                "value": "",
-                "valueType": "triggerId"
-            }
-        ],
-        "x": 70,
-        "y": 720,
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 130,
+        "y": 580,
         "wires": [
             [
-                "cbfa8db8cefb75e8"
+                "f17ba328c5df4950",
+                "cfaf0c85f5f85707"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f17ba328c5df4950",
+        "type": "api-get-history",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Upstairs History",
+        "server": "db559b8fb32ae329",
+        "version": 1,
+        "startDate": "",
+        "endDate": "",
+        "entityId": "climate.upstairs_thermostat",
+        "entityIdType": "equals",
+        "useRelativeTime": true,
+        "relativeTime": "60 minutes",
+        "flatten": true,
+        "outputType": "array",
+        "outputLocationType": "msg",
+        "outputLocation": "payload",
+        "x": 340,
+        "y": 540,
+        "wires": [
+            [
+                "be852847aa18f7b3"
             ]
         ]
     },
     {
-        "id": "cbfa8db8cefb75e8",
+        "id": "38cf0b4186fdb449",
+        "type": "debug",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "be852847aa18f7b3",
+        "type": "function",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Last Active",
+        "func": "const history = msg.payload;\nlet lastActiveTimestamp = 0;\nlet foundActive = false;\n\n\nfor (let i = history.length - 1; i >= 0; i --) {\n    const entity = history[i];\n    \n    const attrs = entity.attributes;\n    const isHvacActive = (attrs.hvac_action && attrs.hvac_action !== \"idle\");\n    const isFanActive = (attrs.fan_mode && attrs.fan_mode !== \"Auto low\");\n\n    if (isHvacActive || isFanActive) {\n        lastActiveTimestamp = new Date(entity.last_updated).getTime();\n        foundActive = true;\n        break;\n    }\n}\n\nif (!foundActive) {\n    msg.reason = \"No activity detected in the history buffer.\";\n    msg.topic = \"run\"\n    return msg;\n}\n\nconst now = new Date().getTime();\nconst diffMs = now - lastActiveTimestamp;\nconst diffMins = Math.floor((diffMs / 1000) / 60);\n\nif (diffMins >= 60) {\n    msg.reason = `System idle for ${diffMins} minutes. running circulation.`;\n    msg.topic = \"run\"\n    return msg;\n} else {\n    msg.reason = `System was active ${diffMins} minutes ago. Skipping.`;\n    msg.topic = \"dont_run\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "38cf0b4186fdb449",
+                "699adaf1c8e2ca27",
+                "73c1260df2ef4912",
+                "146d993e20cfca2a"
+            ]
+        ]
+    },
+    {
+        "id": "699adaf1c8e2ca27",
+        "type": "debug",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "reason",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "146d993e20cfca2a",
         "type": "switch",
         "z": "268e18aa217b4aab",
-        "name": "Zones",
-        "property": "payload",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Run fan?",
+        "property": "topic",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "home",
+                "v": "run",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "not_home",
+                "v": "dont_run",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 230,
-        "y": 700,
+        "x": 700,
+        "y": 540,
         "wires": [
-            [],
+            [
+                "56598b21a1b8aba9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "73c1260df2ef4912",
+        "type": "debug",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "619a246034753b9b",
+        "type": "delay",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 580,
+        "wires": [
+            [
+                "a47112ecc55086de"
+            ]
+        ]
+    },
+    {
+        "id": "56598b21a1b8aba9",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Circulation",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_fan_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "climate.upstairs_thermostat"
+        ],
+        "labelId": [],
+        "data": "{\"fan_mode\":\"Circulation\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_fan_mode",
+        "x": 850,
+        "y": 540,
+        "wires": [
+            [
+                "619a246034753b9b"
+            ]
+        ]
+    },
+    {
+        "id": "a47112ecc55086de",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Auto Low",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_fan_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "climate.upstairs_thermostat"
+        ],
+        "labelId": [],
+        "data": "{\"fan_mode\":\"Auto low\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_fan_mode",
+        "x": 840,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfaf0c85f5f85707",
+        "type": "api-get-history",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Downstairs History",
+        "server": "db559b8fb32ae329",
+        "version": 1,
+        "startDate": "",
+        "endDate": "",
+        "entityId": "climate.downstairs_thermostat",
+        "entityIdType": "equals",
+        "useRelativeTime": true,
+        "relativeTime": "60 minutes",
+        "flatten": true,
+        "outputType": "array",
+        "outputLocationType": "msg",
+        "outputLocation": "payload",
+        "x": 350,
+        "y": 720,
+        "wires": [
+            [
+                "12939e2bb7051720"
+            ]
+        ]
+    },
+    {
+        "id": "12939e2bb7051720",
+        "type": "function",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Last Active",
+        "func": "const history = msg.payload;\nlet lastActiveTimestamp = 0;\nlet foundActive = false;\n\n\nfor (let i = history.length - 1; i >= 0; i --) {\n    const entity = history[i];\n    \n    const attrs = entity.attributes;\n    const isHvacActive = (attrs.hvac_action && attrs.hvac_action !== \"idle\");\n    const isFanActive = (attrs.fan_mode && attrs.fan_mode !== \"Auto low\");\n\n    if (isHvacActive || isFanActive) {\n        lastActiveTimestamp = new Date(entity.last_updated).getTime();\n        foundActive = true;\n        break;\n    }\n}\n\nif (!foundActive) {\n    msg.reason = \"No activity detected in the history buffer.\";\n    msg.topic = \"run\"\n    return msg;\n}\n\nconst now = new Date().getTime();\nconst diffMs = now - lastActiveTimestamp;\nconst diffMins = Math.floor((diffMs / 1000) / 60);\n\nif (diffMins >= 60) {\n    msg.reason = `System idle for ${diffMins} minutes. running circulation.`;\n    msg.topic = \"run\"\n    return msg;\n} else {\n    msg.reason = `System was active ${diffMins} minutes ago. Skipping.`;\n    msg.topic = \"dont_run\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 720,
+        "wires": [
+            [
+                "3ad7dae55ae73c76"
+            ]
+        ]
+    },
+    {
+        "id": "3ad7dae55ae73c76",
+        "type": "switch",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Run fan?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "run",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "dont_run",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 700,
+        "y": 720,
+        "wires": [
+            [
+                "b1cec89ea69f87f3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b1cec89ea69f87f3",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Circulation",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_fan_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "climate.downstairs_thermostat"
+        ],
+        "labelId": [],
+        "data": "{\"fan_mode\":\"Circulation\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_fan_mode",
+        "x": 850,
+        "y": 720,
+        "wires": [
+            [
+                "0a4944bb4c9f9d0c"
+            ]
+        ]
+    },
+    {
+        "id": "0a4944bb4c9f9d0c",
+        "type": "delay",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 760,
+        "wires": [
+            [
+                "7545a875fcb35b63"
+            ]
+        ]
+    },
+    {
+        "id": "7545a875fcb35b63",
+        "type": "api-call-service",
+        "z": "268e18aa217b4aab",
+        "g": "43e3d99ff6a09c4d",
+        "name": "Auto Low",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "climate.set_fan_mode",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "climate.downstairs_thermostat"
+        ],
+        "labelId": [],
+        "data": "{\"fan_mode\":\"Auto low\"}",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "climate",
+        "service": "set_fan_mode",
+        "x": 840,
+        "y": 800,
+        "wires": [
             []
         ]
     },
@@ -3467,7 +3821,8 @@
         "y": 800,
         "wires": [
             [
-                "1ef7e48716a63986"
+                "1ef7e48716a63986",
+                "2065e64818bbbe2f"
             ]
         ]
     },
@@ -4194,6 +4549,37 @@
         ]
     },
     {
+        "id": "2065e64818bbbe2f",
+        "type": "api-call-service",
+        "z": "f890255551479538",
+        "name": "Shark | Off",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "light.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "light.shark"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "light",
+        "service": "turn_off",
+        "x": 350,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "5435ae65ee21b09f",
         "type": "server-state-changed",
         "z": "1b0d2a649eef07c6",
@@ -4746,6 +5132,372 @@
         ]
     },
     {
+        "id": "e952c4222c72dfd5",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Eric & Flavia = home",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.eric",
+                "person.flavia"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "home",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "ae1643a9f8f919db"
+            ],
+            [
+                "6eac15571b031c2f"
+            ]
+        ]
+    },
+    {
+        "id": "57a6bab491ad0ba4",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Flavia",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.flavia"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "1af6a1d45a765914"
+            ]
+        ]
+    },
+    {
+        "id": "1af6a1d45a765914",
+        "type": "switch",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Zones",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not_home",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ae1643a9f8f919db",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Both Home",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.bothhome"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "input_boolean",
+        "service": "turn_on",
+        "x": 350,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6eac15571b031c2f",
+        "type": "api-call-service",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Not Both Home",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "input_boolean.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.bothhome"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "input_boolean",
+        "service": "turn_off",
+        "x": 360,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25814f01a326a678",
+        "type": "switch",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Zones",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "not_home",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "020d8b531d87afb5",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Eric",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.eric"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "25814f01a326a678"
+            ]
+        ]
+    },
+    {
+        "id": "d66cbade39b4b7d8",
+        "type": "server-state-changed",
+        "z": "1b0d2a649eef07c6",
+        "g": "658dd8ef57052fbc",
+        "name": "Eric & Flavia = Away",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "person.eric",
+                "person.flavia"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "home",
+        "ifStateType": "str",
+        "ifStateOperator": "is_not",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "6eac15571b031c2f"
+            ],
+            []
+        ]
+    },
+    {
         "id": "2617b7ce20d237c6",
         "type": "debug",
         "z": "d1b7e22ea16d084a",
@@ -5164,8 +5916,8 @@
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
-        "x": 160,
-        "y": 440,
+        "x": 140,
+        "y": 400,
         "wires": [
             [
                 "9797c6b34ed4ba16"
@@ -5194,8 +5946,8 @@
         "outputLocationType": "msg",
         "outputLocation": "payload",
         "outputResultsCount": 1,
-        "x": 350,
-        "y": 440,
+        "x": 330,
+        "y": 400,
         "wires": [
             [
                 "24a610122a86761f",
@@ -5231,8 +5983,8 @@
         "checkall": true,
         "repair": false,
         "outputs": 3,
-        "x": 740,
-        "y": 440,
+        "x": 720,
+        "y": 400,
         "wires": [
             [
                 "c91ff4b712a2a756"
@@ -5258,8 +6010,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 400,
+        "x": 940,
+        "y": 360,
         "wires": [
             [
                 "390bcd37bac3b157"
@@ -5279,8 +6031,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 440,
+        "x": 940,
+        "y": 400,
         "wires": [
             [
                 "390bcd37bac3b157"
@@ -5300,8 +6052,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 480,
+        "x": 940,
+        "y": 440,
         "wires": [
             [
                 "390bcd37bac3b157"
@@ -5334,8 +6086,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mergecontext": "",
-        "x": 1200,
-        "y": 440,
+        "x": 1180,
+        "y": 400,
         "wires": [
             []
         ]
@@ -5354,8 +6106,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 360,
+        "x": 490,
+        "y": 320,
         "wires": []
     },
     {
@@ -5386,8 +6138,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mergecontext": "",
-        "x": 550,
-        "y": 440,
+        "x": 530,
+        "y": 400,
         "wires": [
             [
                 "b0ea380f4d03fc99"
@@ -5418,8 +6170,8 @@
         "blockInputOverrides": false,
         "domain": "notify",
         "service": "mobile_app_flaphone",
-        "x": 350,
-        "y": 240,
+        "x": 330,
+        "y": 220,
         "wires": [
             []
         ]
@@ -5446,8 +6198,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 240,
+        "x": 140,
+        "y": 220,
         "wires": [
             [
                 "faa8534c12b282d6"
@@ -5468,7 +6220,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 620,
         "y": 120,
         "wires": []
     },
@@ -5501,7 +6253,7 @@
         "outputLocationType": "msg",
         "outputLocation": "payload",
         "outputResultsCount": 1,
-        "x": 390,
+        "x": 370,
         "y": 60,
         "wires": [
             [
@@ -5531,7 +6283,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 150,
         "y": 60,
         "wires": [
             [
@@ -5563,7 +6315,7 @@
         "blockInputOverrides": false,
         "domain": "notify",
         "service": "mobile_app_squid_9_pro",
-        "x": 590,
+        "x": 570,
         "y": 60,
         "wires": [
             []
@@ -5631,28 +6383,28 @@
         "id": "30a12dcd35ab51d1",
         "type": "switch",
         "z": "3e6814fd0f8088e6",
-        "name": "",
+        "name": "Status",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "Running",
+                "v": "running",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Pause",
+                "v": "pause",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Idle",
+                "v": "idle",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Finish",
+                "v": "finish",
                 "vt": "str"
             }
         ],
@@ -5662,8 +6414,12 @@
         "x": 330,
         "y": 80,
         "wires": [
-            [],
-            [],
+            [
+                "40f5af3788c77234"
+            ],
+            [
+                "e4e201a39e381447"
+            ],
             [],
             [
                 "15601ca005a79aeb"
@@ -5674,7 +6430,8 @@
         "id": "15601ca005a79aeb",
         "type": "api-call-service",
         "z": "3e6814fd0f8088e6",
-        "name": "Notify Dad",
+        "d": true,
+        "name": "Print Done",
         "server": "db559b8fb32ae329",
         "version": 7,
         "debugenabled": false,
@@ -5684,7 +6441,7 @@
         "deviceId": [],
         "entityId": [],
         "labelId": [],
-        "data": "{\"title\":\"Print Done\"}",
+        "data": "{\"message\":\"Print Done\",\"title\":\"Transmogrifier\"}",
         "dataType": "json",
         "mergeContext": "",
         "mustacheAltTags": false,
@@ -5693,8 +6450,8 @@
         "blockInputOverrides": false,
         "domain": "notify",
         "service": "mobile_app_squid_9_pro",
-        "x": 510,
-        "y": 100,
+        "x": 750,
+        "y": 160,
         "wires": [
             []
         ]
@@ -5750,7 +6507,7 @@
             }
         ],
         "x": 90,
-        "y": 140,
+        "y": 300,
         "wires": [
             [
                 "0297f1dc72f9aaff"
@@ -5774,14 +6531,251 @@
                 "t": "eq",
                 "v": "Problem",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "40f5af3788c77234",
+        "type": "switch",
+        "z": "3e6814fd0f8088e6",
+        "name": "Started || Resumed",
+        "property": "data.old_state.status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "idle",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "pause",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "a80a7dc7b1808df1"
+            ],
+            [
+                "6492616e922715b8"
+            ]
+        ]
+    },
+    {
+        "id": "a80a7dc7b1808df1",
+        "type": "api-call-service",
+        "z": "3e6814fd0f8088e6",
+        "name": "Print Started",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\":\"Print Started\",\"title\":\"Transmogrifier\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "x": 750,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6492616e922715b8",
+        "type": "api-call-service",
+        "z": "3e6814fd0f8088e6",
+        "name": "Print Resumed",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\":\"Print Resumed\",\"title\":\"Transmogrifier\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "x": 760,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4e201a39e381447",
+        "type": "api-call-service",
+        "z": "3e6814fd0f8088e6",
+        "name": "Print Paused",
+        "server": "db559b8fb32ae329",
+        "version": 7,
+        "debugenabled": false,
+        "action": "notify.mobile_app_squid_9_pro",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "{\"message\":\"Print Paused\",\"title\":\"Transmogrifier\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "notify",
+        "service": "mobile_app_squid_9_pro",
+        "x": 750,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0a54917ba9980f2",
+        "type": "server-state-changed",
+        "z": "3e6814fd0f8088e6",
+        "name": "Transmogrifier Stage",
+        "server": "db559b8fb32ae329",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.x1c_00m00a2a1402639_current_stage"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "string",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "a484a6b6500b8fbf"
+            ]
+        ]
+    },
+    {
+        "id": "a484a6b6500b8fbf",
+        "type": "switch",
+        "z": "3e6814fd0f8088e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "idle",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "heatbed_preheating",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "cleaning_nozzle_tip",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "auto_bed_leveling",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "calibrating_extrusion",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "offline",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
         "x": 330,
         "y": 180,
         "wires": [
+            [],
+            [],
+            [],
+            [],
             [],
             []
         ]
